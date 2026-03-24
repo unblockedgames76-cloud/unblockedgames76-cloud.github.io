@@ -146,6 +146,12 @@
   display: block !important;
 }
 
+/* Left source panels: do not scroll whole panel body */
+.content-wrapper .wp-menu-left .wp-panel-body {
+  max-height: none !important;
+  overflow: visible !important;
+}
+
 /* Source tabs (Most Recent | View All) */
 .content-wrapper .wp-source-tabs {
   display: flex !important;
@@ -174,7 +180,9 @@
   background: #f6f7f7 !important;
   border-radius: 4px !important;
 }
-
+.content-wrapper .wp-source-item lable {
+  font-weight: 400 !important;
+}
 .content-wrapper .wp-source-item:hover {
   background: #f0f0f1 !important;
 }
@@ -192,9 +200,35 @@
   font-size: 14px !important;
 }
 
+/* WordPress-like source list: scroll list only, keep actions visible */
+.content-wrapper .wp-source-list {
+  max-height: 260px !important;
+  overflow-y: auto !important;
+  border: 1px solid #dcdcde !important;
+  background: #fff !important;
+  padding: 8px !important;
+}
+
+.content-wrapper .wp-source-actions {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-top: 8px !important;
+  position: sticky !important;
+  bottom: 0 !important;
+  background: #fff !important;
+  border-top: 1px solid #dcdcde !important;
+  padding-top: 8px !important;
+  z-index: 2 !important;
+}
+
+.content-wrapper .wp-source-actions .mt-2 {
+  margin-top: 0 !important;
+}
+
 /* Add to Menu button - WordPress blue */
 .content-wrapper .wp-add-to-menu {
-  margin-top: 12px !important;
+  margin-top: 0 !important;
   padding: 8px 16px !important;
   background: #2271b1 !important;
   color: #fff !important;
@@ -488,6 +522,7 @@
 .content-wrapper .wp-menu-item-settings.show,
 #menuStructureWrapper .wp-menu-item-settings.show {
   display: block !important;
+  max-width: 382px !important;
 }
 
 #menuStructureWrapper .wp-menu-item-settings-inner,
@@ -623,17 +658,31 @@
   font-weight: 600 !important;
 }
 
-/* Custom link inputs */
-.content-wrapper .custom-link-inline {
-  display: flex !important;
-  gap: 8px !important;
+/* Custom link form (WordPress-like) */
+.content-wrapper .wp-custom-link-form {
   margin-top: 10px !important;
-  flex-wrap: wrap !important;
 }
 
-.content-wrapper .custom-link-inline input {
-  flex: 1 !important;
-  min-width: 120px !important;
+.content-wrapper .wp-custom-link-form .description {
+  margin: 0 0 12px !important;
+}
+
+.content-wrapper .wp-custom-link-form .description label {
+  display: block !important;
+  font-size: 13px !important;
+  color: #50575e !important;
+  margin-bottom: 6px !important;
+  font-weight: 500 !important;
+}
+
+.content-wrapper .wp-custom-link-form input.form-control {
+  width: 100% !important;
+}
+
+.content-wrapper .wp-custom-link-actions {
+  display: flex !important;
+  justify-content: flex-end !important;
+  margin-top: 4px !important;
 }
 
 /* Content area background for menu page - WordPress light gray */
