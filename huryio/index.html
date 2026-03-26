@@ -30,7 +30,7 @@
     <meta name="twitter:image" content="https://unblockedgames76.us/image/2026/01/26/huryio.jpg" />
 
         <meta property="article:published_time" content="2026-01-26T15:44:17+07:00" />
-    <meta property="article:modified_time" content="2026-03-26T16:34:20+07:00" />
+    <meta property="article:modified_time" content="2026-03-26T17:13:25+07:00" />
     
             <link rel="icon" type="image/x-icon" href="/" />
         <link rel="shortcut icon" type="image/x-icon" href="/" />
@@ -68,7 +68,7 @@ This browser game enhances the appeal of Funny games gameplay. hury.io runs secu
 Try hury.io instantly without downloads. Explore more games in the same spirit, such as Spot The Differences and Ice Cream Truck.",
       "genre": "Funny",
       "datePublished": "2026-01",
-      "dateModified": "2026-03-26T16:34:20+07:00",
+      "dateModified": "2026-03-26T17:13:25+07:00",
       "author": {
         "@type": "Organization",
         "name": "UnblockedGames76"
@@ -92,7 +92,7 @@ Try hury.io instantly without downloads. Explore more games in the same spirit, 
         {
           "@type": "InteractionCounter",
           "interactionType": { "@type": "PlayAction" },
-          "userInteractionCount": 69
+          "userInteractionCount": 71
         },
         {
           "@type": "InteractionCounter",
@@ -267,13 +267,114 @@ Try hury.io instantly without downloads. Explore more games in the same spirit, 
     </header>
 
 
-<app-sidebar-desktop></app-sidebar-desktop>
+<aside id="sidebar" data-position="left" class="fixed left-0 border-r top-16 bottom-0 w-64 bg-white dark:bg-background-dark border-slate-200 dark:border-white/5 overflow-y-auto p-4 z-40 transition-transform duration-300 hidden lg:block" style="scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.1) transparent;">
+    <nav class="space-y-0.5 mb-6">
+                <a class="sidebar-link active" href="/"><span class="material-symbols-outlined">home</span> Home</a>
+        <a class="sidebar-link " href="/history"><span class="material-symbols-outlined">history</span> Recently Played</a>
+        <a class="sidebar-link" href="/new-games"><span class="material-symbols-outlined">new_releases</span> New Games</a>
+            </nav>
+        <div class="px-4 mb-3">
+        <h3 class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Categories</h3>
+    </div>
+    <nav class="space-y-0.5">
+                                        <a class="sidebar-link" href="/">
+                <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
+                .io
+            </a>
+                                <a class="sidebar-link" href="/genre/io-games">
+                <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
+                .io Games
+            </a>
+                                <a class="sidebar-link" href="/genre/1-player">
+                <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
+                1 Player
+            </a>
+                                
+                                <a class="sidebar-link" href="/genre/2-players">
+                <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
+                2 Players
+            </a>
+                                
+                                
+                                <a class="sidebar-link" href="/genre/action">
+                <span class="material-symbols-outlined text-xl text-orange-500">sports_score</span> 
+                Action
+            </a>
+                                <a class="sidebar-link" href="/genre/adventure">
+                <span class="material-symbols-outlined text-xl text-pink-500">travel_explore</span> 
+                Adventure
+            </a>
+                                
+                <a class="sidebar-link" href="/filter-results">
+            <span class="material-symbols-outlined text-xl text-slate-500">more_horiz</span> 
+            All Categories
+        </a>
+    </nav>
+    </aside>
 
 
 <div id="mobile-sidebar-overlay" class="fixed inset-0 bg-black/50 dark:bg-black/50 backdrop-blur-sm z-40 hidden lg:hidden"></div>
 
 
-<app-sidebar-mobile></app-sidebar-mobile>
+<aside id="mobile-sidebar" class="fixed left-0 top-0 bottom-0 w-64 bg-white dark:bg-background-dark border-r border-slate-200 dark:border-white/5 overflow-y-auto no-scrollbar p-4 z-50 transform -translate-x-full transition-transform duration-300 lg:hidden">
+    <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center gap-2">
+                            <img src="https://unblockedgames76.us/image/1769497936_logo.png" alt="UnblockedGames76" class="h-9 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="size-9 bg-gradient-to-br from-primary to-accent-purple rounded-xl hidden items-center justify-center text-white shadow-lg shadow-primary/20">
+                    <span class="material-symbols-outlined font-bold">sports_esports</span>
+                </div>
+                        <div class="text-xl font-extrabold tracking-tighter uppercase text-slate-900 dark:text-white">
+                UnblockedGames76<span class="text-primary"></span>
+            </div>
+        </div>
+        <button id="mobile-sidebar-close" class="p-2 hover:bg-white/5 rounded-lg">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+    </div>
+    
+    <nav class="space-y-1 mb-8">
+                <a class="sidebar-link active" href="/"><span class="material-symbols-outlined">home</span> Home</a>
+        <a class="sidebar-link " href="/history"><span class="material-symbols-outlined">history</span> Recently Played</a>
+        <a class="sidebar-link" href="/new-games"><span class="material-symbols-outlined">new_releases</span> New Games</a>
+            </nav>
+        <div class="px-4 mb-4">
+        <h3 class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Categories</h3>
+    </div>
+    <nav class="space-y-1">
+                                <a class="sidebar-link" href="/">
+                <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
+                .io
+            </a>
+                                <a class="sidebar-link" href="/genre/io-games">
+                <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
+                .io Games
+            </a>
+                                <a class="sidebar-link" href="/genre/1-player">
+                <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
+                1 Player
+            </a>
+                                
+                                <a class="sidebar-link" href="/genre/2-players">
+                <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
+                2 Players
+            </a>
+                                
+                                
+                                <a class="sidebar-link" href="/genre/action">
+                <span class="material-symbols-outlined text-xl text-orange-500">sports_score</span> 
+                Action
+            </a>
+                                <a class="sidebar-link" href="/genre/adventure">
+                <span class="material-symbols-outlined text-xl text-pink-500">travel_explore</span> 
+                Adventure
+            </a>
+                                
+                <a class="sidebar-link" href="/filter-results">
+            <span class="material-symbols-outlined text-xl text-slate-500">more_horiz</span> 
+            All Categories
+        </a>
+    </nav>
+    </aside>
 
 <script>
     // Mobile sidebar toggle
@@ -400,9 +501,9 @@ Try hury.io instantly without downloads. Explore more games in the same spirit, 
                             <h1 class="text-base font-bold text-slate-900 dark:text-white leading-none truncate">hury.io Funny Game</h1>
                             <p class="text-xs text-slate-400 mt-1 flex items-center gap-2 flex-wrap">
                                 <span></span> •
-                                <span>69
+                                <span>71
                                     Plays</span> •
-                                <span>58 Views</span> •
+                                <span>60 Views</span> •
                                 <span class="flex items-center gap-1">
                                     <span class="material-symbols-outlined text-[10px] text-yellow-400"
                                         style="font-variation-settings:'FILL' 1">star</span>
@@ -914,6 +1015,22 @@ Try hury.io instantly without downloads. Explore more games in the same spirit, 
                         <a href="/" class="group cursor-pointer">
                 <div
                     class="aspect-[4/5] rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 mb-2 relative">
+                    <img alt="Bullet Force"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        src="/image/2026/03/26/bullet-force.jpg"
+                        onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&amp;q=80';" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
+                                                <span class="text-[10px] font-bold text-white">4.4 ★</span>
+                    </div>
+                </div>
+                <p
+                    class="text-[11px] font-bold truncate text-slate-900 dark:text-white group-hover:text-primary transition-colors">
+                    Bullet Force</p>
+            </a>
+                        <a href="/" class="group cursor-pointer">
+                <div
+                    class="aspect-[4/5] rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 mb-2 relative">
                     <img alt="Veck.io"
                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                         src="/image/2026/03/13/veckio.jpg"
@@ -990,22 +1107,6 @@ Try hury.io instantly without downloads. Explore more games in the same spirit, 
                 <p
                     class="text-[11px] font-bold truncate text-slate-900 dark:text-white group-hover:text-primary transition-colors">
                     1v1.LOL</p>
-            </a>
-                        <a href="/little-big-snake" class="group cursor-pointer">
-                <div
-                    class="aspect-[4/5] rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 mb-2 relative">
-                    <img alt="Little Big Snake"
-                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        src="https://unblockedgames76.us/image/2026/01/26/little-big-snake.jpg"
-                        onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&amp;q=80';" />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                                                <span class="text-[10px] font-bold text-white">3.7 ★</span>
-                    </div>
-                </div>
-                <p
-                    class="text-[11px] font-bold truncate text-slate-900 dark:text-white group-hover:text-primary transition-colors">
-                    Little Big Snake</p>
             </a>
                     </div>
     </section>
@@ -1269,7 +1370,7 @@ Try hury.io instantly without downloads. Explore more games in the same spirit, 
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV',
+                        'X-CSRF-TOKEN': 'z5LuUXeTWd95B9eEVHjTUmQNmhYrk3JZ02b2CrrQ',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1344,7 +1445,7 @@ Try hury.io instantly without downloads. Explore more games in the same spirit, 
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://unblockedgames76.us/dislike/2240', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'z5LuUXeTWd95B9eEVHjTUmQNmhYrk3JZ02b2CrrQ', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1357,7 +1458,7 @@ Try hury.io instantly without downloads. Explore more games in the same spirit, 
 
         fetch('https://unblockedgames76.us/like/2240', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'z5LuUXeTWd95B9eEVHjTUmQNmhYrk3JZ02b2CrrQ', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1414,7 +1515,7 @@ Try hury.io instantly without downloads. Explore more games in the same spirit, 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV',
+                'X-CSRF-TOKEN': 'z5LuUXeTWd95B9eEVHjTUmQNmhYrk3JZ02b2CrrQ',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1469,7 +1570,7 @@ Try hury.io instantly without downloads. Explore more games in the same spirit, 
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://unblockedgames76.us/like/2240', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'z5LuUXeTWd95B9eEVHjTUmQNmhYrk3JZ02b2CrrQ', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1482,7 +1583,7 @@ Try hury.io instantly without downloads. Explore more games in the same spirit, 
 
         fetch('https://unblockedgames76.us/dislike/2240', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'z5LuUXeTWd95B9eEVHjTUmQNmhYrk3JZ02b2CrrQ', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
