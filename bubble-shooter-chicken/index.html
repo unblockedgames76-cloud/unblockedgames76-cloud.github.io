@@ -135,13 +135,13 @@ Dive into the experience without limitations. Players interested in Bubble Shoot
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://unblockedgames76-cloud.github.io"
+          "item": "https://unblockedgames76.us"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Bubble Shooter Chicken",
-          "item": "https://unblockedgames76-cloud.github.io/bubble-shooter-chicken"
+          "item": "https://unblockedgames76.us/bubble-shooter-chicken"
         }
       ]
     }
@@ -1265,7 +1265,7 @@ Dive into the experience without limitations. Players interested in Bubble Shoot
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs',
+                        'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1340,7 +1340,7 @@ Dive into the experience without limitations. Players interested in Bubble Shoot
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://unblockedgames76.us/dislike/2270', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1353,7 +1353,7 @@ Dive into the experience without limitations. Players interested in Bubble Shoot
 
         fetch('https://unblockedgames76.us/like/2270', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1410,7 +1410,7 @@ Dive into the experience without limitations. Players interested in Bubble Shoot
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs',
+                'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1465,7 +1465,7 @@ Dive into the experience without limitations. Players interested in Bubble Shoot
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://unblockedgames76.us/like/2270', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1478,7 +1478,7 @@ Dive into the experience without limitations. Players interested in Bubble Shoot
 
         fetch('https://unblockedgames76.us/dislike/2270', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())

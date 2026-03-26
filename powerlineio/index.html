@@ -135,13 +135,13 @@ Start your adventure in Powerline.io right now. Continue your adventure with Zum
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://unblockedgames76-cloud.github.io"
+          "item": "https://unblockedgames76.us"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Powerline.io",
-          "item": "https://unblockedgames76-cloud.github.io/powerlineio"
+          "item": "https://unblockedgames76.us/powerlineio"
         }
       ]
     }
@@ -1269,7 +1269,7 @@ Start your adventure in Powerline.io right now. Continue your adventure with Zum
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs',
+                        'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1344,7 +1344,7 @@ Start your adventure in Powerline.io right now. Continue your adventure with Zum
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://unblockedgames76.us/dislike/2238', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1357,7 +1357,7 @@ Start your adventure in Powerline.io right now. Continue your adventure with Zum
 
         fetch('https://unblockedgames76.us/like/2238', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1414,7 +1414,7 @@ Start your adventure in Powerline.io right now. Continue your adventure with Zum
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs',
+                'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1469,7 +1469,7 @@ Start your adventure in Powerline.io right now. Continue your adventure with Zum
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://unblockedgames76.us/like/2238', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1482,7 +1482,7 @@ Start your adventure in Powerline.io right now. Continue your adventure with Zum
 
         fetch('https://unblockedgames76.us/dislike/2238', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())

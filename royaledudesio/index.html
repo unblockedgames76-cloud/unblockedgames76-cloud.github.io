@@ -135,13 +135,13 @@ RoyaleDudes.io uses HTML5 (Unity WebGL) technology to deliver reliable gameplay 
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://unblockedgames76-cloud.github.io"
+          "item": "https://unblockedgames76.us"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "RoyaleDudes.io",
-          "item": "https://unblockedgames76-cloud.github.io/royaledudesio"
+          "item": "https://unblockedgames76.us/royaledudesio"
         }
       ]
     }
@@ -1278,7 +1278,7 @@ RoyaleDudes.io uses HTML5 (Unity WebGL) technology to deliver reliable gameplay 
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs',
+                        'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1353,7 +1353,7 @@ RoyaleDudes.io uses HTML5 (Unity WebGL) technology to deliver reliable gameplay 
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://unblockedgames76.us/dislike/2224', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1366,7 +1366,7 @@ RoyaleDudes.io uses HTML5 (Unity WebGL) technology to deliver reliable gameplay 
 
         fetch('https://unblockedgames76.us/like/2224', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1423,7 +1423,7 @@ RoyaleDudes.io uses HTML5 (Unity WebGL) technology to deliver reliable gameplay 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs',
+                'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1478,7 +1478,7 @@ RoyaleDudes.io uses HTML5 (Unity WebGL) technology to deliver reliable gameplay 
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://unblockedgames76.us/like/2224', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1491,7 +1491,7 @@ RoyaleDudes.io uses HTML5 (Unity WebGL) technology to deliver reliable gameplay 
 
         fetch('https://unblockedgames76.us/dislike/2224', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())

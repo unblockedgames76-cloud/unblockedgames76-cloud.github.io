@@ -135,13 +135,13 @@ Dive into the experience without limitations. If Call of War: World War 2 was ex
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://unblockedgames76-cloud.github.io"
+          "item": "https://unblockedgames76.us"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Call of War: World War 2",
-          "item": "https://unblockedgames76-cloud.github.io/call-of-war-world-war-2"
+          "item": "https://unblockedgames76.us/call-of-war-world-war-2"
         }
       ]
     }
@@ -1270,7 +1270,7 @@ Dive into the experience without limitations. If Call of War: World War 2 was ex
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs',
+                        'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1345,7 +1345,7 @@ Dive into the experience without limitations. If Call of War: World War 2 was ex
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://unblockedgames76.us/dislike/2214', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1358,7 +1358,7 @@ Dive into the experience without limitations. If Call of War: World War 2 was ex
 
         fetch('https://unblockedgames76.us/like/2214', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1415,7 +1415,7 @@ Dive into the experience without limitations. If Call of War: World War 2 was ex
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs',
+                'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1470,7 +1470,7 @@ Dive into the experience without limitations. If Call of War: World War 2 was ex
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://unblockedgames76.us/like/2214', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1483,7 +1483,7 @@ Dive into the experience without limitations. If Call of War: World War 2 was ex
 
         fetch('https://unblockedgames76.us/dislike/2214', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())

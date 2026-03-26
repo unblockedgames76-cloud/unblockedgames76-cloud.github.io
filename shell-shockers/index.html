@@ -135,13 +135,13 @@ Play Shell Shockers online and discover endless entertainment. After playing She
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://unblockedgames76-cloud.github.io"
+          "item": "https://unblockedgames76.us"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Shell Shockers",
-          "item": "https://unblockedgames76-cloud.github.io/shell-shockers"
+          "item": "https://unblockedgames76.us/shell-shockers"
         }
       ]
     }
@@ -1273,7 +1273,7 @@ Play Shell Shockers online and discover endless entertainment. After playing She
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs',
+                        'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1348,7 +1348,7 @@ Play Shell Shockers online and discover endless entertainment. After playing She
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://unblockedgames76.us/dislike/2261', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1361,7 +1361,7 @@ Play Shell Shockers online and discover endless entertainment. After playing She
 
         fetch('https://unblockedgames76.us/like/2261', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1418,7 +1418,7 @@ Play Shell Shockers online and discover endless entertainment. After playing She
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs',
+                'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1473,7 +1473,7 @@ Play Shell Shockers online and discover endless entertainment. After playing She
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://unblockedgames76.us/like/2261', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1486,7 +1486,7 @@ Play Shell Shockers online and discover endless entertainment. After playing She
 
         fetch('https://unblockedgames76.us/dislike/2261', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'qbHzI4HZJTcT2r7RkuueHoFlzRq6UnWv19YGqQcV', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
