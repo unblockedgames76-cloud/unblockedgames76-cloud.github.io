@@ -418,12 +418,53 @@
   padding: 12px !important;
   background: #f6f7f7 !important;
   border: 1px solid #dcdcde !important;
+  border-left: 4px solid #d63638 !important;
   border-radius: 4px !important;
+}
+
+.content-wrapper .bulk-remove-selected-link {
+  color: #d63638 !important;
+  text-decoration: none !important;
+  font-size: 13px !important;
+  border: none !important;
+  background: transparent !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+}
+
+.content-wrapper .bulk-remove-selected-link:hover:not(:disabled) {
+  color: #b32d2e !important;
+  text-decoration: underline !important;
+}
+
+.content-wrapper .bulk-remove-selected-link:disabled {
+  color: #a7aaad !important;
+  opacity: 1 !important;
+  cursor: not-allowed !important;
+  text-decoration: none !important;
+}
+
+.content-wrapper .bulk-select-list-sentence {
+  color: #1d2327 !important;
+  line-height: 1.5 !important;
+}
+
+/* Kéo từ cả thanh (giống WP); cột phải + checkbox là pointer */
+#menuStructureWrapper .wp-menu-item-bar,
+.content-wrapper .wp-menu-item-bar {
+  cursor: move !important;
+}
+
+#menuStructureWrapper .wp-menu-item-bar .item-meta,
+#menuStructureWrapper .wp-menu-item-bar .bulk-select-checkbox-wrapper,
+.content-wrapper .wp-menu-item-bar .item-meta,
+.content-wrapper .wp-menu-item-bar .bulk-select-checkbox-wrapper {
+  cursor: pointer !important;
 }
 
 #menuStructureWrapper .wp-menu-item-bar .drag-handle,
 .content-wrapper .wp-menu-item-bar .drag-handle {
-  cursor: grab !important;
+  cursor: inherit !important;
   color: #787c82 !important;
   margin-right: 10px !important;
   font-size: 12px !important;
