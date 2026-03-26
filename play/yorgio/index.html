@@ -30,7 +30,7 @@
     <meta name="twitter:image" content="https://unblockedgames76.us/image/2026/01/26/yorgio.jpg" />
 
         <meta property="article:published_time" content="2026-01-26T15:44:14+07:00" />
-    <meta property="article:modified_time" content="2026-03-26T15:25:49+07:00" />
+    <meta property="article:modified_time" content="2026-03-26T16:34:17+07:00" />
     
             <link rel="icon" type="image/x-icon" href="/" />
         <link rel="shortcut icon" type="image/x-icon" href="/" />
@@ -79,7 +79,7 @@ Launch YORG.io instantly through UnblockedGames76. If you&#039;re looking for mo
   "interactionStatistic": {
     "@type": "InteractionCounter",
     "interactionType": "https://schema.org/PlayAction",
-    "userInteractionCount": "80"
+    "userInteractionCount": "81"
   },
   "author": {
     "@type": "Organization",
@@ -147,7 +147,8 @@ Launch YORG.io instantly through UnblockedGames76. If you&#039;re looking for mo
 
   gtag('config', 'G-8JVVQ779VJ');
 </script>
-    </head>
+    <script src="/assets/js/sidebar-component.js" defer></script>
+</head>
 
 
 <body class="bg-background-dark text-slate-100 min-h-screen overflow-x-hidden" data-menu-position="sidebar-left">
@@ -231,90 +232,13 @@ Launch YORG.io instantly through UnblockedGames76. If you&#039;re looking for mo
     </header>
 
 
-<aside id="sidebar" data-position="left" class="fixed left-0 border-r top-16 bottom-0 w-64 bg-white dark:bg-background-dark border-slate-200 dark:border-white/5 overflow-y-auto p-4 z-40 transition-transform duration-300 hidden lg:block" style="scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.1) transparent;">
-    <nav class="space-y-0.5 mb-6">
-                <a class="sidebar-link " href="/"><span class="material-symbols-outlined">home</span> Home</a>
-        <a class="sidebar-link " href="/history"><span class="material-symbols-outlined">history</span> Recently Played</a>
-        <a class="sidebar-link" href="/new-games"><span class="material-symbols-outlined">new_releases</span> New Games</a>
-            </nav>
-        <div class="px-4 mb-3">
-        <h3 class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Categories</h3>
-    </div>
-    <nav class="space-y-0.5">
-                                        <a class="sidebar-link" href="/">
-                <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
-                .io
-            </a>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                <a class="sidebar-link" href="/genre/adventure">
-                <span class="material-symbols-outlined text-xl text-pink-500">travel_explore</span> 
-                Adventure
-            </a>
-                                
-                <a class="sidebar-link" href="/filter-results">
-            <span class="material-symbols-outlined text-xl text-slate-500">more_horiz</span> 
-            All Categories
-        </a>
-    </nav>
-    </aside>
+<app-sidebar-desktop></app-sidebar-desktop>
 
 
 <div id="mobile-sidebar-overlay" class="fixed inset-0 bg-black/50 dark:bg-black/50 backdrop-blur-sm z-40 hidden lg:hidden"></div>
 
 
-<aside id="mobile-sidebar" class="fixed left-0 top-0 bottom-0 w-64 bg-white dark:bg-background-dark border-r border-slate-200 dark:border-white/5 overflow-y-auto no-scrollbar p-4 z-50 transform -translate-x-full transition-transform duration-300 lg:hidden">
-    <div class="flex items-center justify-between mb-6">
-        <div class="flex items-center gap-2">
-                            <img src="https://unblockedgames76.us/image/1769497936_logo.png" alt="UnblockedGames76" class="h-9 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <div class="size-9 bg-gradient-to-br from-primary to-accent-purple rounded-xl hidden items-center justify-center text-white shadow-lg shadow-primary/20">
-                    <span class="material-symbols-outlined font-bold">sports_esports</span>
-                </div>
-                        <div class="text-xl font-extrabold tracking-tighter uppercase text-slate-900 dark:text-white">
-                UnblockedGames76<span class="text-primary"></span>
-            </div>
-        </div>
-        <button id="mobile-sidebar-close" class="p-2 hover:bg-white/5 rounded-lg">
-            <span class="material-symbols-outlined">close</span>
-        </button>
-    </div>
-    
-    <nav class="space-y-1 mb-8">
-                <a class="sidebar-link " href="/"><span class="material-symbols-outlined">home</span> Home</a>
-        <a class="sidebar-link " href="/history"><span class="material-symbols-outlined">history</span> Recently Played</a>
-        <a class="sidebar-link" href="/new-games"><span class="material-symbols-outlined">new_releases</span> New Games</a>
-            </nav>
-        <div class="px-4 mb-4">
-        <h3 class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Categories</h3>
-    </div>
-    <nav class="space-y-1">
-                                <a class="sidebar-link" href="/">
-                <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
-                .io
-            </a>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                <a class="sidebar-link" href="/genre/adventure">
-                <span class="material-symbols-outlined text-xl text-pink-500">travel_explore</span> 
-                Adventure
-            </a>
-                                
-                <a class="sidebar-link" href="/filter-results">
-            <span class="material-symbols-outlined text-xl text-slate-500">more_horiz</span> 
-            All Categories
-        </a>
-    </nav>
-    </aside>
+<app-sidebar-mobile></app-sidebar-mobile>
 
 <script>
     // Mobile sidebar toggle
@@ -430,7 +354,7 @@ Launch YORG.io instantly through UnblockedGames76. If you&#039;re looking for mo
                                  onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&amp;q=80';" />
                             <div class="flex-1 min-w-0">
                                 <h1 class="text-sm md:text-lg font-bold text-white leading-none truncate">YORG.io</h1>
-                                <p class="text-[10px] md:text-xs text-slate-400 mt-1">80 Plays</p>
+                                <p class="text-[10px] md:text-xs text-slate-400 mt-1">81 Plays</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-2 justify-end">
@@ -568,7 +492,7 @@ Launch YORG.io instantly through UnblockedGames76. If you&#039;re looking for mo
                                 <a href="/fnf-rotten-smoothie-the-amazing-grace">
                                     <h4 class="text-sm font-bold text-slate-900 dark:text-white truncate group-hover:text-primary transition-colors">Fnf Rotten Smoothie The Amazing Grace</h4>
                                 </a>
-                                <p class="text-xs text-slate-500 dark:text-slate-500 mt-1">232 plays</p>
+                                <p class="text-xs text-slate-500 dark:text-slate-500 mt-1">233 plays</p>
                                                                 <div class="flex gap-1 mt-2">
                                                                         <a href="/" class="text-[9px] px-2 py-0.5 bg-slate-200 dark:bg-white/5 hover:bg-primary/20 rounded-full text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Funny</a>
                                                                         <a href="/" class="text-[9px] px-2 py-0.5 bg-slate-200 dark:bg-white/5 hover:bg-primary/20 rounded-full text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Crazy</a>
@@ -659,7 +583,7 @@ Launch YORG.io instantly through UnblockedGames76. If you&#039;re looking for mo
                                 <p class="text-xs text-slate-500 dark:text-slate-500 mt-1">102 plays</p>
                                                                 <div class="flex gap-1 mt-2">
                                                                         <a href="/" class="text-[9px] px-2 py-0.5 bg-slate-200 dark:bg-white/5 hover:bg-primary/20 rounded-full text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Crazy</a>
-                                                                        <a href="/genre/skill" class="text-[9px] px-2 py-0.5 bg-slate-200 dark:bg-white/5 hover:bg-primary/20 rounded-full text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Skill</a>
+                                                                        <a href="/" class="text-[9px] px-2 py-0.5 bg-slate-200 dark:bg-white/5 hover:bg-primary/20 rounded-full text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Skill</a>
                                                                     </div>
                                                             </div>
                         </div>
@@ -701,7 +625,7 @@ Launch YORG.io instantly through UnblockedGames76. If you&#039;re looking for mo
                                 </a>
                                 <p class="text-xs text-slate-500 dark:text-slate-500 mt-1">176 plays</p>
                                                                 <div class="flex gap-1 mt-2">
-                                                                        <a href="/genre/multiplayer" class="text-[9px] px-2 py-0.5 bg-slate-200 dark:bg-white/5 hover:bg-primary/20 rounded-full text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Multiplayer</a>
+                                                                        <a href="/" class="text-[9px] px-2 py-0.5 bg-slate-200 dark:bg-white/5 hover:bg-primary/20 rounded-full text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Multiplayer</a>
                                                                         <a href="/" class="text-[9px] px-2 py-0.5 bg-slate-200 dark:bg-white/5 hover:bg-primary/20 rounded-full text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Crazy</a>
                                                                     </div>
                                                             </div>
@@ -721,10 +645,10 @@ Launch YORG.io instantly through UnblockedGames76. If you&#039;re looking for mo
                                 <a href="/learn-to-fly-2">
                                     <h4 class="text-sm font-bold text-slate-900 dark:text-white truncate group-hover:text-primary transition-colors">Learn to fly 2</h4>
                                 </a>
-                                <p class="text-xs text-slate-500 dark:text-slate-500 mt-1">86 plays</p>
+                                <p class="text-xs text-slate-500 dark:text-slate-500 mt-1">87 plays</p>
                                                                 <div class="flex gap-1 mt-2">
                                                                         <a href="/" class="text-[9px] px-2 py-0.5 bg-slate-200 dark:bg-white/5 hover:bg-primary/20 rounded-full text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Crazy</a>
-                                                                        <a href="/genre/skill" class="text-[9px] px-2 py-0.5 bg-slate-200 dark:bg-white/5 hover:bg-primary/20 rounded-full text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Skill</a>
+                                                                        <a href="/" class="text-[9px] px-2 py-0.5 bg-slate-200 dark:bg-white/5 hover:bg-primary/20 rounded-full text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Skill</a>
                                                                     </div>
                                                             </div>
                         </div>
@@ -743,7 +667,7 @@ Launch YORG.io instantly through UnblockedGames76. If you&#039;re looking for mo
                                 <a href="/feralsio">
                                     <h4 class="text-sm font-bold text-slate-900 dark:text-white truncate group-hover:text-primary transition-colors">Ferals.io</h4>
                                 </a>
-                                <p class="text-xs text-slate-500 dark:text-slate-500 mt-1">83 plays</p>
+                                <p class="text-xs text-slate-500 dark:text-slate-500 mt-1">84 plays</p>
                                                                 <div class="flex gap-1 mt-2">
                                                                         <a href="/" class="text-[9px] px-2 py-0.5 bg-slate-200 dark:bg-white/5 hover:bg-primary/20 rounded-full text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Crazy</a>
                                                                     </div>
@@ -881,7 +805,7 @@ function saveToHistory() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'sPHx5PRn3g9g4xQltIvqVUIzuJsGA4Cm4TATDgaM'
+                'X-CSRF-TOKEN': 'iqApGrjncjWHVc9cE4vOfOfCKdgDiYna9v9K8pAs'
             }
         }).catch(e => console.log('Play count tracking failed'));
     }
