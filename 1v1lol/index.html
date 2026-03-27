@@ -859,7 +859,7 @@ Don’t miss out on 1v1.LOL — enjoy it instantly on UnblockedGames76. Discover
         </h3>
 
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-2 gap-2">
-                        <a href="/"
+                        <a href="/zombs-royale"
                 class="group relative bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-all cursor-pointer">
                 <div class="aspect-square relative overflow-hidden">
                     <img alt="Zombs Royale"
@@ -1408,7 +1408,7 @@ Don’t miss out on 1v1.LOL — enjoy it instantly on UnblockedGames76. Discover
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe',
+                        'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1483,7 +1483,7 @@ Don’t miss out on 1v1.LOL — enjoy it instantly on UnblockedGames76. Discover
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://unblockedgames76.us/dislike/2172', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1496,7 +1496,7 @@ Don’t miss out on 1v1.LOL — enjoy it instantly on UnblockedGames76. Discover
 
         fetch('https://unblockedgames76.us/like/2172', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1553,7 +1553,7 @@ Don’t miss out on 1v1.LOL — enjoy it instantly on UnblockedGames76. Discover
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe',
+                'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1608,7 +1608,7 @@ Don’t miss out on 1v1.LOL — enjoy it instantly on UnblockedGames76. Discover
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://unblockedgames76.us/like/2172', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1621,7 +1621,7 @@ Don’t miss out on 1v1.LOL — enjoy it instantly on UnblockedGames76. Discover
 
         fetch('https://unblockedgames76.us/dislike/2172', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())

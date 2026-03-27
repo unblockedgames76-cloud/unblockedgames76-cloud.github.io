@@ -845,7 +845,7 @@ Enjoy quick and easy browser access. Players who like this title may also enjoy 
         </h3>
 
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-2 gap-2">
-                        <a href="/dogfight-2"
+                        <a href="/"
                 class="group relative bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-all cursor-pointer">
                 <div class="aspect-square relative overflow-hidden">
                     <img alt="Dogfight 2"
@@ -859,7 +859,7 @@ Enjoy quick and easy browser access. Players who like this title may also enjoy 
                         Dogfight 2</h4>
                 </div>
             </a>
-                        <a href="/man-vs-missiles"
+                        <a href="/"
                 class="group relative bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-all cursor-pointer">
                 <div class="aspect-square relative overflow-hidden">
                     <img alt="Man Vs. Missiles"
@@ -1084,7 +1084,7 @@ Enjoy quick and easy browser access. Players who like this title may also enjoy 
                     class="text-[11px] font-bold truncate text-slate-900 dark:text-white group-hover:text-primary transition-colors">
                     Mahjongg Solitaire</p>
             </a>
-                        <a href="/wordmeister" class="group cursor-pointer">
+                        <a href="/" class="group cursor-pointer">
                 <div
                     class="aspect-[4/5] rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 mb-2 relative">
                     <img alt="Wordmeister"
@@ -1100,7 +1100,7 @@ Enjoy quick and easy browser access. Players who like this title may also enjoy 
                     class="text-[11px] font-bold truncate text-slate-900 dark:text-white group-hover:text-primary transition-colors">
                     Wordmeister</p>
             </a>
-                        <a href="/space-waves" class="group cursor-pointer">
+                        <a href="/" class="group cursor-pointer">
                 <div
                     class="aspect-[4/5] rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 mb-2 relative">
                     <img alt="Space Waves"
@@ -1116,7 +1116,7 @@ Enjoy quick and easy browser access. Players who like this title may also enjoy 
                     class="text-[11px] font-bold truncate text-slate-900 dark:text-white group-hover:text-primary transition-colors">
                     Space Waves</p>
             </a>
-                        <a href="/ragdoll-archers" class="group cursor-pointer">
+                        <a href="/" class="group cursor-pointer">
                 <div
                     class="aspect-[4/5] rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 mb-2 relative">
                     <img alt="Ragdoll Archers"
@@ -1394,7 +1394,7 @@ Enjoy quick and easy browser access. Players who like this title may also enjoy 
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe',
+                        'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1469,7 +1469,7 @@ Enjoy quick and easy browser access. Players who like this title may also enjoy 
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://unblockedgames76.us/dislike/3852', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1482,7 +1482,7 @@ Enjoy quick and easy browser access. Players who like this title may also enjoy 
 
         fetch('https://unblockedgames76.us/like/3852', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1539,7 +1539,7 @@ Enjoy quick and easy browser access. Players who like this title may also enjoy 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe',
+                'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1594,7 +1594,7 @@ Enjoy quick and easy browser access. Players who like this title may also enjoy 
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://unblockedgames76.us/like/3852', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1607,7 +1607,7 @@ Enjoy quick and easy browser access. Players who like this title may also enjoy 
 
         fetch('https://unblockedgames76.us/dislike/3852', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())

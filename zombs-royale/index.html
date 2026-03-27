@@ -860,7 +860,7 @@ Launch Zombs Royale instantly and start playing. Players might also like Geometr
                         Ragdoll Archers</h4>
                 </div>
             </a>
-                        <a href="/1v1lol"
+                        <a href="/"
                 class="group relative bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-all cursor-pointer">
                 <div class="aspect-square relative overflow-hidden">
                     <img alt="1v1.LOL"
@@ -1395,7 +1395,7 @@ Launch Zombs Royale instantly and start playing. Players might also like Geometr
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe',
+                        'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1470,7 +1470,7 @@ Launch Zombs Royale instantly and start playing. Players might also like Geometr
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://unblockedgames76.us/dislike/2239', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1483,7 +1483,7 @@ Launch Zombs Royale instantly and start playing. Players might also like Geometr
 
         fetch('https://unblockedgames76.us/like/2239', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1540,7 +1540,7 @@ Launch Zombs Royale instantly and start playing. Players might also like Geometr
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe',
+                'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1595,7 +1595,7 @@ Launch Zombs Royale instantly and start playing. Players might also like Geometr
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://unblockedgames76.us/like/2239', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1608,7 +1608,7 @@ Launch Zombs Royale instantly and start playing. Players might also like Geometr
 
         fetch('https://unblockedgames76.us/dislike/2239', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())

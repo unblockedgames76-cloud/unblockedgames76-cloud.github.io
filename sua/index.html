@@ -1243,7 +1243,7 @@ Powered by HTML5 (Unity WebGL)2, the game runs efficiently across different devi
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe',
+                        'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1318,7 +1318,7 @@ Powered by HTML5 (Unity WebGL)2, the game runs efficiently across different devi
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://unblockedgames76.us/dislike/2182', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1331,7 +1331,7 @@ Powered by HTML5 (Unity WebGL)2, the game runs efficiently across different devi
 
         fetch('https://unblockedgames76.us/like/2182', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1388,7 +1388,7 @@ Powered by HTML5 (Unity WebGL)2, the game runs efficiently across different devi
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe',
+                'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1443,7 +1443,7 @@ Powered by HTML5 (Unity WebGL)2, the game runs efficiently across different devi
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://unblockedgames76.us/like/2182', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1456,7 +1456,7 @@ Powered by HTML5 (Unity WebGL)2, the game runs efficiently across different devi
 
         fetch('https://unblockedgames76.us/dislike/2182', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())

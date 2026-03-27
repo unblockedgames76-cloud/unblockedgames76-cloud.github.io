@@ -531,6 +531,46 @@ Built with HTML5 (Unity WebGL), the game runs smoothly across Browser (desktop, 
         <p class="text-[10px] text-slate-500 mt-0.5">Shooting • 3D</p>
     </div>
 </div>
+                                                    <div class="group relative bg-surface-dark rounded-2xl overflow-hidden border border-white/5 hover:border-primary/50 transition-all cursor-pointer">
+    <div class="aspect-[4/3] relative overflow-hidden">
+        <a href="/head-soccer">
+            <img alt="Head Soccer" 
+                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                 src="https://unblockedgames76.us/image/2026/03/19/head-soccer.jpg"
+                 onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&amp;q=80';" />
+        </a>
+        <span class="absolute top-2 right-2 flex items-center gap-1 bg-black/60 backdrop-blur-md px-1.5 py-0.5 rounded text-[8px] font-bold">
+            <span class="material-symbols-outlined text-[8px] text-yellow-400 fill-current">star</span>
+            4.5
+        </span>
+    </div>
+    <div class="p-3">
+        <a href="/head-soccer">
+            <h4 class="text-sm font-bold truncate group-hover:text-primary transition-colors">Head Soccer</h4>
+        </a>
+        <p class="text-[10px] text-slate-500 mt-0.5">Sports • Arcade</p>
+    </div>
+</div>
+                                                    <div class="group relative bg-surface-dark rounded-2xl overflow-hidden border border-white/5 hover:border-primary/50 transition-all cursor-pointer">
+    <div class="aspect-[4/3] relative overflow-hidden">
+        <a href="/dogfight">
+            <img alt="Dogfight" 
+                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                 src="https://unblockedgames76.us/image/2026/01/27/dogfight.jpg"
+                 onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&amp;q=80';" />
+        </a>
+        <span class="absolute top-2 right-2 flex items-center gap-1 bg-black/60 backdrop-blur-md px-1.5 py-0.5 rounded text-[8px] font-bold">
+            <span class="material-symbols-outlined text-[8px] text-yellow-400 fill-current">star</span>
+            4.7
+        </span>
+    </div>
+    <div class="p-3">
+        <a href="/dogfight">
+            <h4 class="text-sm font-bold truncate group-hover:text-primary transition-colors">Dogfight</h4>
+        </a>
+        <p class="text-[10px] text-slate-500 mt-0.5">Airplane</p>
+    </div>
+</div>
                                                     </div>
             </div>
 
@@ -697,7 +737,7 @@ Built with HTML5 (Unity WebGL), the game runs smoothly across Browser (desktop, 
                                                             </div>
                         </div>
                                                 <div class="group flex gap-3 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 rounded-2xl p-3 border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-all">
-                            <a href="/" class="relative w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+                            <a href="/head-soccer" class="relative w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
                                 <img alt="Head Soccer" 
                                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
                                      src="https://unblockedgames76.us/image/2026/03/19/head-soccer.jpg"
@@ -708,7 +748,7 @@ Built with HTML5 (Unity WebGL), the game runs smoothly across Browser (desktop, 
                                 </div>
                                                             </a>
                             <div class="flex-1 min-w-0">
-                                <a href="/">
+                                <a href="/head-soccer">
                                     <h4 class="text-sm font-bold text-slate-900 dark:text-white truncate group-hover:text-primary transition-colors">Head Soccer</h4>
                                 </a>
                                 <p class="text-xs text-slate-500 dark:text-slate-500 mt-1">80 plays</p>
@@ -719,7 +759,7 @@ Built with HTML5 (Unity WebGL), the game runs smoothly across Browser (desktop, 
                                                             </div>
                         </div>
                                                 <div class="group flex gap-3 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 rounded-2xl p-3 border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-all">
-                            <a href="/" class="relative w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+                            <a href="/dogfight" class="relative w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
                                 <img alt="Dogfight" 
                                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
                                      src="https://unblockedgames76.us/image/2026/01/27/dogfight.jpg"
@@ -730,7 +770,7 @@ Built with HTML5 (Unity WebGL), the game runs smoothly across Browser (desktop, 
                                 </div>
                                                             </a>
                             <div class="flex-1 min-w-0">
-                                <a href="/">
+                                <a href="/dogfight">
                                     <h4 class="text-sm font-bold text-slate-900 dark:text-white truncate group-hover:text-primary transition-colors">Dogfight</h4>
                                 </a>
                                 <p class="text-xs text-slate-500 dark:text-slate-500 mt-1">192 plays</p>
@@ -871,7 +911,7 @@ function saveToHistory() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe'
+                'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj'
             }
         }).catch(e => console.log('Play count tracking failed'));
     }

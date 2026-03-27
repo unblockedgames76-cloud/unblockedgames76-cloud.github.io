@@ -926,7 +926,7 @@ Start enjoying the gameplay instantly. If you liked the style of Football Bros, 
                         Penalty Kick</h4>
                 </div>
             </a>
-                        <a href="/"
+                        <a href="/head-soccer"
                 class="group relative bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-all cursor-pointer">
                 <div class="aspect-square relative overflow-hidden">
                     <img alt="Head Soccer"
@@ -940,7 +940,7 @@ Start enjoying the gameplay instantly. If you liked the style of Football Bros, 
                         Head Soccer</h4>
                 </div>
             </a>
-                        <a href="/"
+                        <a href="/penalty-kicks"
                 class="group relative bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-all cursor-pointer">
                 <div class="aspect-square relative overflow-hidden">
                     <img alt="Penalty Kicks"
@@ -1391,7 +1391,7 @@ Start enjoying the gameplay instantly. If you liked the style of Football Bros, 
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe',
+                        'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1466,7 +1466,7 @@ Start enjoying the gameplay instantly. If you liked the style of Football Bros, 
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://unblockedgames76.us/dislike/2167', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1479,7 +1479,7 @@ Start enjoying the gameplay instantly. If you liked the style of Football Bros, 
 
         fetch('https://unblockedgames76.us/like/2167', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1536,7 +1536,7 @@ Start enjoying the gameplay instantly. If you liked the style of Football Bros, 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe',
+                'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1591,7 +1591,7 @@ Start enjoying the gameplay instantly. If you liked the style of Football Bros, 
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://unblockedgames76.us/like/2167', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1604,7 +1604,7 @@ Start enjoying the gameplay instantly. If you liked the style of Football Bros, 
 
         fetch('https://unblockedgames76.us/dislike/2167', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())

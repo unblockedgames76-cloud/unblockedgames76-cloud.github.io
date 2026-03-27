@@ -757,7 +757,7 @@ Experience Helix Jump today on UnblockedGames76. Players might also like Pool Cl
 
 <p>Players who enjoy Action, Skill, Ball, 1 Player games will find this experience especially entertaining. Helix Jump provides fast access to engaging instant unblocked games online fun.</p>
 
-<p>Experience Helix Jump today on UnblockedGames76. Players might also like <a href="/">Pool Club</a> or <a href="/">Fire Road</a>.</p>
+<p>Experience Helix Jump today on UnblockedGames76. Players might also like <a href="/pool-club">Pool Club</a> or <a href="/">Fire Road</a>.</p>
             </div>
             <button id="toggle-about"
                 class="text-primary hover:text-primary/80 font-semibold text-sm flex items-center gap-1 transition-all">
@@ -1393,7 +1393,7 @@ Experience Helix Jump today on UnblockedGames76. Players might also like Pool Cl
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe',
+                        'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1468,7 +1468,7 @@ Experience Helix Jump today on UnblockedGames76. Players might also like Pool Cl
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://unblockedgames76.us/dislike/2602', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1481,7 +1481,7 @@ Experience Helix Jump today on UnblockedGames76. Players might also like Pool Cl
 
         fetch('https://unblockedgames76.us/like/2602', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1538,7 +1538,7 @@ Experience Helix Jump today on UnblockedGames76. Players might also like Pool Cl
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe',
+                'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1593,7 +1593,7 @@ Experience Helix Jump today on UnblockedGames76. Players might also like Pool Cl
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://unblockedgames76.us/like/2602', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1606,7 +1606,7 @@ Experience Helix Jump today on UnblockedGames76. Players might also like Pool Cl
 
         fetch('https://unblockedgames76.us/dislike/2602', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '8ww1vILSxhaSS0DE6JARrx9BEg7lVgEga676QdNe', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tQHGwMAuWGoRN4GHvM3VOSmhc1hUqyoCs6ABmcgj', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
