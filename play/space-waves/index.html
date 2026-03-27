@@ -265,14 +265,11 @@ Web browser (desktop and mobile)",
                 <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
                 1 Player
             </a>
-                                <a class="sidebar-link" href="/genre/2-player">
+                                <a class="sidebar-link" href="/">
                 <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
                 2 Player
             </a>
-                                <a class="sidebar-link" href="/genre/2-players">
-                <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
-                2 Players
-            </a>
+                                
                                 <a class="sidebar-link" href="/genre/2d">
                 <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
                 2D
@@ -289,10 +286,7 @@ Web browser (desktop and mobile)",
                 <span class="material-symbols-outlined text-xl text-pink-500">travel_explore</span> 
                 Adventure
             </a>
-                                <a class="sidebar-link" href="/genre/airplane">
-                <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
-                Airplane
-            </a>
+                                
                 <a class="sidebar-link" href="/filter-results">
             <span class="material-symbols-outlined text-xl text-slate-500">more_horiz</span> 
             All Categories
@@ -341,14 +335,11 @@ Web browser (desktop and mobile)",
                 <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
                 1 Player
             </a>
-                                <a class="sidebar-link" href="/genre/2-player">
+                                <a class="sidebar-link" href="/">
                 <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
                 2 Player
             </a>
-                                <a class="sidebar-link" href="/genre/2-players">
-                <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
-                2 Players
-            </a>
+                                
                                 <a class="sidebar-link" href="/genre/2d">
                 <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
                 2D
@@ -365,10 +356,7 @@ Web browser (desktop and mobile)",
                 <span class="material-symbols-outlined text-xl text-pink-500">travel_explore</span> 
                 Adventure
             </a>
-                                <a class="sidebar-link" href="/genre/airplane">
-                <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span> 
-                Airplane
-            </a>
+                                
                 <a class="sidebar-link" href="/filter-results">
             <span class="material-symbols-outlined text-xl text-slate-500">more_horiz</span> 
             All Categories
@@ -622,6 +610,26 @@ Web browser (desktop and mobile)",
         <p class="text-[10px] text-slate-500 mt-0.5">Puzzle • Mobile</p>
     </div>
 </div>
+                                                    <div class="group relative bg-surface-dark rounded-2xl overflow-hidden border border-white/5 hover:border-primary/50 transition-all cursor-pointer">
+    <div class="aspect-[4/3] relative overflow-hidden">
+        <a href="/little-big-snake">
+            <img alt="Little Big Snake" 
+                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                 src="https://unblockedgames76.us/image/2026/01/26/little-big-snake.jpg"
+                 onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&amp;q=80';" />
+        </a>
+        <span class="absolute top-2 right-2 flex items-center gap-1 bg-black/60 backdrop-blur-md px-1.5 py-0.5 rounded text-[8px] font-bold">
+            <span class="material-symbols-outlined text-[8px] text-yellow-400 fill-current">star</span>
+            3.7
+        </span>
+    </div>
+    <div class="p-3">
+        <a href="/little-big-snake">
+            <h4 class="text-sm font-bold truncate group-hover:text-primary transition-colors">Little Big Snake</h4>
+        </a>
+        <p class="text-[10px] text-slate-500 mt-0.5">Snake • Skill</p>
+    </div>
+</div>
                                                     </div>
             </div>
 
@@ -788,7 +796,7 @@ Web browser (desktop and mobile)",
                                                             </div>
                         </div>
                                                 <div class="group flex gap-3 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 rounded-2xl p-3 border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-all">
-                            <a href="/" class="relative w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+                            <a href="/little-big-snake" class="relative w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
                                 <img alt="Little Big Snake" 
                                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
                                      src="https://unblockedgames76.us/image/2026/01/26/little-big-snake.jpg"
@@ -799,7 +807,7 @@ Web browser (desktop and mobile)",
                                 </div>
                                                             </a>
                             <div class="flex-1 min-w-0">
-                                <a href="/">
+                                <a href="/little-big-snake">
                                     <h4 class="text-sm font-bold text-slate-900 dark:text-white truncate group-hover:text-primary transition-colors">Little Big Snake</h4>
                                 </a>
                                 <p class="text-xs text-slate-500 dark:text-slate-500 mt-1">208 plays</p>
@@ -963,7 +971,7 @@ function saveToHistory() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'Q3lPVaW4569hbAIPjz5FpIrsQkjca0YuZogb04Yf'
+                'X-CSRF-TOKEN': 'gbmO4MtnY1F1EdlTIA0H9wuqnndwvS8VS9VlCylk'
             }
         }).catch(e => console.log('Play count tracking failed'));
     }
