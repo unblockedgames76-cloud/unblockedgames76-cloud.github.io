@@ -638,7 +638,7 @@ Launch Angry Zombie now and enjoy a fresh gameplay experience A mix of familiari
             <div
                 class="relative w-full min-h-[550px] md:min-h-[600px] rounded-3xl overflow-hidden border border-slate-200 dark:border-white/10 group shadow-2xl bg-slate-100 dark:bg-black">
                 <div class="absolute inset-0 bg-cover bg-center blur-3xl opacity-30 scale-110"
-                    style="background-image: url('/image/2026/04/08/angry-zombie.jpg');"></div>
+                    style="background-image: url('https://wots3.com/image/2026/04/08/angry-zombie.jpg');"></div>
 
                 <div
                     class="absolute inset-0 flex flex-col items-center justify-center py-8 md:py-16 pb-28 md:pb-32 bg-gradient-to-t from-slate-100 dark:from-black via-transparent to-slate-100/20 dark:to-black/20">
@@ -1593,7 +1593,7 @@ Launch Angry Zombie now and enjoy a fresh gameplay experience A mix of familiari
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse',
+                        'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1668,7 +1668,7 @@ Launch Angry Zombie now and enjoy a fresh gameplay experience A mix of familiari
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://wots3.com/dislike/145', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1681,7 +1681,7 @@ Launch Angry Zombie now and enjoy a fresh gameplay experience A mix of familiari
 
         fetch('https://wots3.com/like/145', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1738,7 +1738,7 @@ Launch Angry Zombie now and enjoy a fresh gameplay experience A mix of familiari
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse',
+                'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1793,7 +1793,7 @@ Launch Angry Zombie now and enjoy a fresh gameplay experience A mix of familiari
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://wots3.com/like/145', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1806,7 +1806,7 @@ Launch Angry Zombie now and enjoy a fresh gameplay experience A mix of familiari
 
         fetch('https://wots3.com/dislike/145', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())

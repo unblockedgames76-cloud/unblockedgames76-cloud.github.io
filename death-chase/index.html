@@ -636,7 +636,7 @@ Click into Death Chase and start playing instantly If Death Chase caught your in
             <div
                 class="relative w-full min-h-[550px] md:min-h-[600px] rounded-3xl overflow-hidden border border-slate-200 dark:border-white/10 group shadow-2xl bg-slate-100 dark:bg-black">
                 <div class="absolute inset-0 bg-cover bg-center blur-3xl opacity-30 scale-110"
-                    style="background-image: url('/image/2026/04/08/death-chase.jpg');"></div>
+                    style="background-image: url('https://wots3.com/image/2026/04/08/death-chase.jpg');"></div>
 
                 <div
                     class="absolute inset-0 flex flex-col items-center justify-center py-8 md:py-16 pb-28 md:pb-32 bg-gradient-to-t from-slate-100 dark:from-black via-transparent to-slate-100/20 dark:to-black/20">
@@ -1589,7 +1589,7 @@ Click into Death Chase and start playing instantly If Death Chase caught your in
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse',
+                        'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1664,7 +1664,7 @@ Click into Death Chase and start playing instantly If Death Chase caught your in
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://wots3.com/dislike/365', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1677,7 +1677,7 @@ Click into Death Chase and start playing instantly If Death Chase caught your in
 
         fetch('https://wots3.com/like/365', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1734,7 +1734,7 @@ Click into Death Chase and start playing instantly If Death Chase caught your in
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse',
+                'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1789,7 +1789,7 @@ Click into Death Chase and start playing instantly If Death Chase caught your in
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://wots3.com/like/365', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1802,7 +1802,7 @@ Click into Death Chase and start playing instantly If Death Chase caught your in
 
         fetch('https://wots3.com/dislike/365', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())

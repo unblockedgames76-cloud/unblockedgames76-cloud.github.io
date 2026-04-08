@@ -636,7 +636,7 @@ Get ready to test your pizza-making skills in the addictive browser game &quot;P
             <div
                 class="relative w-full min-h-[550px] md:min-h-[600px] rounded-3xl overflow-hidden border border-slate-200 dark:border-white/10 group shadow-2xl bg-slate-100 dark:bg-black">
                 <div class="absolute inset-0 bg-cover bg-center blur-3xl opacity-30 scale-110"
-                    style="background-image: url('/image/2026/04/07/pizza-fall.jpg');"></div>
+                    style="background-image: url('https://wots3.com/image/2026/04/07/pizza-fall.jpg');"></div>
 
                 <div
                     class="absolute inset-0 flex flex-col items-center justify-center py-8 md:py-16 pb-28 md:pb-32 bg-gradient-to-t from-slate-100 dark:from-black via-transparent to-slate-100/20 dark:to-black/20">
@@ -1435,7 +1435,7 @@ Get ready to test your pizza-making skills in the addictive browser game &quot;P
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse',
+                        'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1510,7 +1510,7 @@ Get ready to test your pizza-making skills in the addictive browser game &quot;P
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://wots3.com/dislike/44', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1523,7 +1523,7 @@ Get ready to test your pizza-making skills in the addictive browser game &quot;P
 
         fetch('https://wots3.com/like/44', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1580,7 +1580,7 @@ Get ready to test your pizza-making skills in the addictive browser game &quot;P
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse',
+                'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1635,7 +1635,7 @@ Get ready to test your pizza-making skills in the addictive browser game &quot;P
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://wots3.com/like/44', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1648,7 +1648,7 @@ Get ready to test your pizza-making skills in the addictive browser game &quot;P
 
         fetch('https://wots3.com/dislike/44', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'tuIzhjEAAKyWwLXFbItiaLXdsePvuNJLr448PVse', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'fpRUZrxYKtSFnPM4yWS9MXfikuK0sbou3CoxD6HO', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
