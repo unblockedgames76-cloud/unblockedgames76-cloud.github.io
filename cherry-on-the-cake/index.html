@@ -1299,7 +1299,7 @@ Launch Cherry On The Cake now and enjoy a fresh gameplay experience After enjoyi
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995',
+                        'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1374,7 +1374,7 @@ Launch Cherry On The Cake now and enjoy a fresh gameplay experience After enjoyi
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://wots3.com/dislike/56', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1387,7 +1387,7 @@ Launch Cherry On The Cake now and enjoy a fresh gameplay experience After enjoyi
 
         fetch('https://wots3.com/like/56', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1444,7 +1444,7 @@ Launch Cherry On The Cake now and enjoy a fresh gameplay experience After enjoyi
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995',
+                'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1499,7 +1499,7 @@ Launch Cherry On The Cake now and enjoy a fresh gameplay experience After enjoyi
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://wots3.com/like/56', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1512,7 +1512,7 @@ Launch Cherry On The Cake now and enjoy a fresh gameplay experience After enjoyi
 
         fetch('https://wots3.com/dislike/56', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())

@@ -1449,7 +1449,7 @@ RotateZ reacts quickly to player input, making gameplay feel more dynamic Open R
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995',
+                        'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1524,7 +1524,7 @@ RotateZ reacts quickly to player input, making gameplay feel more dynamic Open R
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://wots3.com/dislike/327', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1537,7 +1537,7 @@ RotateZ reacts quickly to player input, making gameplay feel more dynamic Open R
 
         fetch('https://wots3.com/like/327', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1594,7 +1594,7 @@ RotateZ reacts quickly to player input, making gameplay feel more dynamic Open R
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995',
+                'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1649,7 +1649,7 @@ RotateZ reacts quickly to player input, making gameplay feel more dynamic Open R
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://wots3.com/like/327', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1662,7 +1662,7 @@ RotateZ reacts quickly to player input, making gameplay feel more dynamic Open R
 
         fetch('https://wots3.com/dislike/327', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())

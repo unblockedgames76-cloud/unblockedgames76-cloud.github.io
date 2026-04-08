@@ -1449,7 +1449,7 @@ You can jump into Car Drift Racers 2 from virtually anywhere, as long as you hav
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995',
+                        'X-CSRF-TOKEN': 'O5vEpA6oea9uotC6eTPJANl51M25mf3Q167Osfz2',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1524,7 +1524,7 @@ You can jump into Car Drift Racers 2 from virtually anywhere, as long as you hav
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://wots3.com/dislike/182', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'O5vEpA6oea9uotC6eTPJANl51M25mf3Q167Osfz2', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1537,7 +1537,7 @@ You can jump into Car Drift Racers 2 from virtually anywhere, as long as you hav
 
         fetch('https://wots3.com/like/182', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'O5vEpA6oea9uotC6eTPJANl51M25mf3Q167Osfz2', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1594,7 +1594,7 @@ You can jump into Car Drift Racers 2 from virtually anywhere, as long as you hav
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995',
+                'X-CSRF-TOKEN': 'O5vEpA6oea9uotC6eTPJANl51M25mf3Q167Osfz2',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1649,7 +1649,7 @@ You can jump into Car Drift Racers 2 from virtually anywhere, as long as you hav
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://wots3.com/like/182', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'O5vEpA6oea9uotC6eTPJANl51M25mf3Q167Osfz2', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1662,7 +1662,7 @@ You can jump into Car Drift Racers 2 from virtually anywhere, as long as you hav
 
         fetch('https://wots3.com/dislike/182', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'O5vEpA6oea9uotC6eTPJANl51M25mf3Q167Osfz2', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())

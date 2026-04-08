@@ -1299,7 +1299,7 @@ Burger Bounty offers a relaxed yet engaging rhythm that works well for both shor
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995',
+                        'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1374,7 +1374,7 @@ Burger Bounty offers a relaxed yet engaging rhythm that works well for both shor
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://wots3.com/dislike/48', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1387,7 +1387,7 @@ Burger Bounty offers a relaxed yet engaging rhythm that works well for both shor
 
         fetch('https://wots3.com/like/48', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1444,7 +1444,7 @@ Burger Bounty offers a relaxed yet engaging rhythm that works well for both shor
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995',
+                'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1499,7 +1499,7 @@ Burger Bounty offers a relaxed yet engaging rhythm that works well for both shor
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://wots3.com/like/48', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1512,7 +1512,7 @@ Burger Bounty offers a relaxed yet engaging rhythm that works well for both shor
 
         fetch('https://wots3.com/dislike/48', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XKsFfEpnzpksEXN7OhQmcLs2tpb1O8DJKPXRv995', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'XDVF1mrtnVwNjmRMw6RJY7wysgh8g6EbuP06BDl5', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
