@@ -32,7 +32,7 @@
     <meta name="twitter:image" content="https://wots3.com/image/2026/04/08/game-439.jpg" />
 
         <meta property="article:published_time" content="2026-04-08T10:26:08+07:00" />
-    <meta property="article:modified_time" content="2026-04-08T16:03:22+07:00" />
+    <meta property="article:modified_time" content="2026-04-08T17:44:46+07:00" />
     
             
         
@@ -70,7 +70,7 @@ The game runs efficiently, helping players focus on the gameplay itself The game
 Looking for a unique and challenging game experience? Look no further than Game 439! This browser game offers a refreshing twist on classic gameplay mechanics, keeping you on your toes with its fast-paced action and strategic decision-making. Dive into this world of mystery and excitement, and see if you have what it takes to come out on top in Game 439! Click and play Game 439 directly on Wots3",
       "genre": ["Other Games","other","other","Other Games","other","other"],
       "datePublished": "2026-04",
-      "dateModified": "2026-04-08T16:03:22+07:00",
+      "dateModified": "2026-04-08T17:44:46+07:00",
       "author": {
         "@type": "Organization",
         "name": ""
@@ -94,7 +94,7 @@ Looking for a unique and challenging game experience? Look no further than Game 
         {
           "@type": "InteractionCounter",
           "interactionType": { "@type": "PlayAction" },
-          "userInteractionCount": 52514
+          "userInteractionCount": 52532
         },
         {
           "@type": "InteractionCounter",
@@ -1453,7 +1453,7 @@ Looking for a unique and challenging game experience? Look no further than Game 
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': 'jpe3Umyks3DPrUXArRwBOjv1GsbXVBpcFbwn1R8U',
+                        'X-CSRF-TOKEN': 'EgMwGbTsOkWl2AyuwofwdXrFuwmfxhG6zShqWtP1',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1528,7 +1528,7 @@ Looking for a unique and challenging game experience? Look no further than Game 
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://wots3.com/dislike/65', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'jpe3Umyks3DPrUXArRwBOjv1GsbXVBpcFbwn1R8U', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'EgMwGbTsOkWl2AyuwofwdXrFuwmfxhG6zShqWtP1', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1541,7 +1541,7 @@ Looking for a unique and challenging game experience? Look no further than Game 
 
         fetch('https://wots3.com/like/65', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'jpe3Umyks3DPrUXArRwBOjv1GsbXVBpcFbwn1R8U', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'EgMwGbTsOkWl2AyuwofwdXrFuwmfxhG6zShqWtP1', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1598,7 +1598,7 @@ Looking for a unique and challenging game experience? Look no further than Game 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'jpe3Umyks3DPrUXArRwBOjv1GsbXVBpcFbwn1R8U',
+                'X-CSRF-TOKEN': 'EgMwGbTsOkWl2AyuwofwdXrFuwmfxhG6zShqWtP1',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1653,7 +1653,7 @@ Looking for a unique and challenging game experience? Look no further than Game 
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://wots3.com/like/65', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'jpe3Umyks3DPrUXArRwBOjv1GsbXVBpcFbwn1R8U', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'EgMwGbTsOkWl2AyuwofwdXrFuwmfxhG6zShqWtP1', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1666,7 +1666,7 @@ Looking for a unique and challenging game experience? Look no further than Game 
 
         fetch('https://wots3.com/dislike/65', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'jpe3Umyks3DPrUXArRwBOjv1GsbXVBpcFbwn1R8U', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'EgMwGbTsOkWl2AyuwofwdXrFuwmfxhG6zShqWtP1', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
