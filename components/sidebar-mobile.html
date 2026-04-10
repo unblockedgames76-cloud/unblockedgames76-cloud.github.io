@@ -1,0 +1,96 @@
+<aside id="mobile-sidebar"
+    class="fixed left-0 top-0 bottom-0 w-64 bg-white dark:bg-background-dark border-r border-slate-200 dark:border-white/5 overflow-y-auto no-scrollbar p-4 z-50 transform -translate-x-full transition-transform duration-300 lg:hidden">
+    <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center gap-2">
+                            <img src="https://wots3.com/image/1773995341_logo.jpg" alt="Wots3" class="h-9 w-auto object-contain"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div
+                    class="size-9 bg-gradient-to-br from-primary to-accent-purple rounded-xl hidden items-center justify-center text-white shadow-lg shadow-primary/20">
+                    <span class="material-symbols-outlined font-bold">sports_esports</span>
+                </div>
+                        <div class="text-xl font-extrabold tracking-tighter uppercase text-slate-900 dark:text-white">
+                Wots3<span
+                    class="text-primary"></span>
+            </div>
+        </div>
+        <button id="mobile-sidebar-close" class="p-2 hover:bg-white/5 rounded-lg">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+    </div>
+
+    <nav class="space-y-1 mb-8">
+                    <a class="sidebar-link active" href="/"><span
+                    class="material-symbols-outlined">home</span> Home</a>
+            <a class="sidebar-link " href="https://wots3.com/history"><span
+                    class="material-symbols-outlined">history</span> Recently Played</a>
+            <a class="sidebar-link" href="/new-games"><span
+                    class="material-symbols-outlined">new_releases</span> New Games</a>
+            </nav>
+            <div class="px-4 mb-4">
+            <h3 class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Categories</h3>
+        </div>
+        <nav class="space-y-1">
+                                            <a class="sidebar-link" href="/genre/io">
+                    <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span>
+                    .io
+                </a>
+                                            <a class="sidebar-link" href="/genre/3d">
+                    <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span>
+                    3D
+                </a>
+                                            <a class="sidebar-link" href="/genre/action-games">
+                    <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span>
+                    Action Games
+                </a>
+                                            <a class="sidebar-link" href="/genre/battle-royale">
+                    <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span>
+                    Battle Royale
+                </a>
+                                            <a class="sidebar-link" href="/genre/cooking-games">
+                    <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span>
+                    Cooking Games
+                </a>
+                                            <a class="sidebar-link" href="/genre/fps">
+                    <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span>
+                    FPS
+                </a>
+                                            <a class="sidebar-link" href="/genre/gun">
+                    <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span>
+                    Gun
+                </a>
+                                            <a class="sidebar-link" href="/genre/mobile">
+                    <span class="material-symbols-outlined text-xl text-slate-500">gamepad</span>
+                    Mobile
+                </a>
+                        
+                            <div class="flex items-center gap-1">
+                    <a class="sidebar-link flex-1" href="/filter-results">
+                        <span class="material-symbols-outlined text-xl text-slate-500">more_horiz</span>
+                        View Mores
+                    </a>
+                    <button type="button" class="submenu-toggle p-1 rounded hover:bg-slate-100 dark:hover:bg-white/5"
+                        data-target="mobile-submenu-more-genres" aria-expanded="false">
+                        <span class="material-symbols-outlined text-base">chevron_right</span>
+                    </button>
+                </div>
+                <div id="mobile-submenu-more-genres" class="submenu-panel ml-4 space-y-1">
+                                                                    <a class="sidebar-link !py-1.5 !text-sm" href="/genre/multiplayer">
+                            <span class="material-symbols-outlined text-base text-slate-500">gamepad</span>
+                            Multiplayer
+                        </a>
+                                                                    <a class="sidebar-link !py-1.5 !text-sm" href="/genre/other-games">
+                            <span class="material-symbols-outlined text-base text-slate-500">gamepad</span>
+                            Other Games
+                        </a>
+                                                                    <a class="sidebar-link !py-1.5 !text-sm" href="/genre/racing-games">
+                            <span class="material-symbols-outlined text-base text-slate-500">gamepad</span>
+                            Racing Games
+                        </a>
+                                                                    <a class="sidebar-link !py-1.5 !text-sm" href="/genre/shooting-games">
+                            <span class="material-symbols-outlined text-base text-slate-500">gamepad</span>
+                            Shooting Games
+                        </a>
+                                      
+                </div>
+                    </nav>
+    </aside>
