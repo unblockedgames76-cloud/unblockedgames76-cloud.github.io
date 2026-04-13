@@ -272,14 +272,14 @@
   background: transparent !important;
   border: none !important;
   border-radius: 0 !important;
-  max-width: 382px !important;
+  max-width: 482px !important;
   box-sizing: border-box !important;
 }
 
 .content-wrapper .wp-menu-item.ui-sortable-helper,
 .wp-menu-item.ui-sortable-helper {
   box-shadow: 0 4px 12px rgba(0,0,0,.15) !important;
-  max-width: 382px !important;
+  max-width: 482px !important;
   box-sizing: border-box !important;
   opacity: 0.95 !important;
   z-index: 10050 !important;
@@ -556,34 +556,71 @@
   display: none !important;
   border-top: 1px solid #c3c4c7 !important;
   background: #f6f7f7 !important;
-  max-width: 382px !important;
+  max-width: 482px !important;
   box-sizing: border-box !important;
 }
 
 .content-wrapper .wp-menu-item-settings.show,
 #menuStructureWrapper .wp-menu-item-settings.show {
   display: block !important;
-  max-width: 382px !important;
+  max-width: 482px !important;
 }
 
 #menuStructureWrapper .wp-menu-item-settings-inner,
 .content-wrapper .wp-menu-item-settings-inner {
   padding: 16px 20px !important;
-  max-width: 382px !important;
+  max-width: 482px !important;
   box-sizing: border-box !important;
 }
 
 .content-wrapper .wp-menu-item-settings .field-nav-label,
-.content-wrapper .wp-menu-item-settings .field-url {
+.content-wrapper .wp-menu-item-settings .field-url,
+.content-wrapper .wp-menu-item-settings .field-icon,
+.content-wrapper .wp-menu-item-settings .field-link-rel {
   margin-bottom: 12px !important;
 }
 
-.content-wrapper .wp-menu-item-settings .field-nav-label label,
+.content-wrapper .wp-menu-item-settings .menu-settings-row {
+  display: grid !important;
+  grid-template-columns: 120px minmax(0, 1fr) !important;
+  align-items: start !important;
+  column-gap: 12px !important;
+}
+
+.content-wrapper .wp-menu-item-settings .menu-settings-row-label,
 .content-wrapper .wp-menu-item-settings .field-url label {
   display: block !important;
-  margin-bottom: 4px !important;
   font-size: 13px !important;
   font-weight: 500 !important;
+  line-height: 36px !important;
+  margin: 0 !important;
+}
+
+.content-wrapper .wp-menu-item-settings .menu-settings-row-control {
+  min-width: 0 !important;
+}
+
+.content-wrapper .wp-menu-item-settings .menu-settings-row-control .form-control {
+  width: 100% !important;
+}
+
+.content-wrapper .wp-menu-item-settings .menu-settings-row-control--with-preview {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.content-wrapper .wp-menu-item-settings .menu-settings-row-control--with-preview .nav-icon-select {
+  flex: 1 1 auto !important;
+}
+
+.content-wrapper .wp-menu-item-settings .menu-settings-row-control small {
+  line-height: 1.4 !important;
+}
+
+.content-wrapper .wp-menu-item-settings .field-link-rel .menu-settings-row-label,
+.content-wrapper .wp-menu-item-settings .field-link-rel .menu-settings-row-control {
+  padding-top: 2px !important;
 }
 
 .content-wrapper .wp-menu-item-settings .field-original {
