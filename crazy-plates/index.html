@@ -32,7 +32,7 @@
     <meta name="twitter:image" content="https://webapp.wots3.com/image/2026/04/14/crazy-plates.jpg" />
 
         <meta property="article:published_time" content="2026-04-14T13:52:23+07:00" />
-    <meta property="article:modified_time" content="2026-04-14T13:52:25+07:00" />
+    <meta property="article:modified_time" content="2026-04-14T14:28:26+07:00" />
     
             
         
@@ -68,7 +68,7 @@
 The game expands the variety of experiences within the instant play games ecosystem. The game atmosphere helps players feel relaxed while exploring Crazy Plates.",
       "genre": "Other Games",
       "datePublished": "2026-04",
-      "dateModified": "2026-04-14T13:52:25+07:00",
+      "dateModified": "2026-04-14T14:28:26+07:00",
       "author": {
         "@type": "Organization",
         "name": ""
@@ -92,7 +92,7 @@ The game expands the variety of experiences within the instant play games ecosys
         {
           "@type": "InteractionCounter",
           "interactionType": { "@type": "PlayAction" },
-          "userInteractionCount": 101147
+          "userInteractionCount": 101154
         },
         {
           "@type": "InteractionCounter",
@@ -173,7 +173,17 @@ The game expands the variety of experiences within the instant play games ecosys
     
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /></noscript>
-            <script src="/assets/js/sidebar-component.js" defer></script>
+                <meta name="google-site-verification" content="YJ0sDR8NVMKnbCeg8i6n9ps49Wu6p0RA4qiGRGoqZ8Y" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82EZT3S9HY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-82EZT3S9HY');
+</script>
+    <script src="/assets/js/sidebar-component.js" defer></script>
 </head>
 
 
@@ -693,7 +703,7 @@ sidebar-left
                             <h1 class="text-base font-bold text-slate-900 dark:text-white leading-none truncate">Crazy Plates Online</h1>
                             <p class="text-xs text-slate-400 mt-1 flex items-center gap-2 flex-wrap">
                                 <span></span> •
-                                <span>101.1K
+                                <span>101.2K
                                     Plays</span> •
                                 <span>910.3K Views</span> •
                                 <span class="flex items-center gap-1">
@@ -1519,7 +1529,7 @@ sidebar-left
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': 'm4NHKT7hqC8WuWPFPX9sDwMMjZ9QXObB5YkyUsgc',
+                        'X-CSRF-TOKEN': 'zj0YZYYeMgyHQHadEkqB0otBnC9DtqmDv64PCDrN',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1594,7 +1604,7 @@ sidebar-left
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://webapp.wots3.com/dislike/1155', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'm4NHKT7hqC8WuWPFPX9sDwMMjZ9QXObB5YkyUsgc', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'zj0YZYYeMgyHQHadEkqB0otBnC9DtqmDv64PCDrN', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1607,7 +1617,7 @@ sidebar-left
 
         fetch('https://webapp.wots3.com/like/1155', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'm4NHKT7hqC8WuWPFPX9sDwMMjZ9QXObB5YkyUsgc', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'zj0YZYYeMgyHQHadEkqB0otBnC9DtqmDv64PCDrN', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1664,7 +1674,7 @@ sidebar-left
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': 'm4NHKT7hqC8WuWPFPX9sDwMMjZ9QXObB5YkyUsgc',
+                'X-CSRF-TOKEN': 'zj0YZYYeMgyHQHadEkqB0otBnC9DtqmDv64PCDrN',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1719,7 +1729,7 @@ sidebar-left
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://webapp.wots3.com/like/1155', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'm4NHKT7hqC8WuWPFPX9sDwMMjZ9QXObB5YkyUsgc', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'zj0YZYYeMgyHQHadEkqB0otBnC9DtqmDv64PCDrN', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1732,7 +1742,7 @@ sidebar-left
 
         fetch('https://webapp.wots3.com/dislike/1155', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'm4NHKT7hqC8WuWPFPX9sDwMMjZ9QXObB5YkyUsgc', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'zj0YZYYeMgyHQHadEkqB0otBnC9DtqmDv64PCDrN', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
