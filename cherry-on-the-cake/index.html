@@ -1283,7 +1283,7 @@ sidebar-left
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': '03SU58HyHo7c4JUZSwLLdtti4F2hhrt4unZhL61I',
+                        'X-CSRF-TOKEN': 'JG1c6987xZRL572ZBiW3J0RBLwFAXWra1VTXk5eE',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({ rating: rating, is_rerate: isRerate, old_rating: oldRating })
@@ -1358,7 +1358,7 @@ sidebar-left
         if (!alreadyLiked && getCookie(dislikeCookieKey)) {
             fetch('https://wots3.com/dislike/846', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '03SU58HyHo7c4JUZSwLLdtti4F2hhrt4unZhL61I', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'JG1c6987xZRL572ZBiW3J0RBLwFAXWra1VTXk5eE', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'undislike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1371,7 +1371,7 @@ sidebar-left
 
         fetch('https://wots3.com/like/846', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '03SU58HyHo7c4JUZSwLLdtti4F2hhrt4unZhL61I', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'JG1c6987xZRL572ZBiW3J0RBLwFAXWra1VTXk5eE', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
@@ -1428,7 +1428,7 @@ sidebar-left
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': '03SU58HyHo7c4JUZSwLLdtti4F2hhrt4unZhL61I',
+                'X-CSRF-TOKEN': 'JG1c6987xZRL572ZBiW3J0RBLwFAXWra1VTXk5eE',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({ action: action })
@@ -1483,7 +1483,7 @@ sidebar-left
         if (!alreadyDisliked && getCookie(likeCookieKey)) {
             fetch('https://wots3.com/like/846', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '03SU58HyHo7c4JUZSwLLdtti4F2hhrt4unZhL61I', 'Accept': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'JG1c6987xZRL572ZBiW3J0RBLwFAXWra1VTXk5eE', 'Accept': 'application/json' },
                 body: JSON.stringify({ action: 'unlike' })
             }).then(r => r.json()).then(d => {
                 if (d.success) {
@@ -1496,7 +1496,7 @@ sidebar-left
 
         fetch('https://wots3.com/dislike/846', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '03SU58HyHo7c4JUZSwLLdtti4F2hhrt4unZhL61I', 'Accept': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'JG1c6987xZRL572ZBiW3J0RBLwFAXWra1VTXk5eE', 'Accept': 'application/json' },
             body: JSON.stringify({ action: action })
         })
             .then(r => r.json())
