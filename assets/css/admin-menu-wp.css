@@ -1,0 +1,787 @@
+/**
+ * WordPress-style Menu Builder - Admin
+ * Giao diện giống Appearance > Menus trong WordPress
+ */
+
+/* Scope within content area to override AdminLTE */
+.content-wrapper .wp-menu-page {
+  background: #f0f0f1 !important;
+  padding: 20px 0;
+  min-height: calc(100vh - 100px);
+}
+
+/* Header tabs - WordPress style */
+.content-wrapper .wp-menu-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-bottom: 20px !important;
+  flex-wrap: wrap !important;
+}
+
+.content-wrapper .wp-menu-header .nav-tabs {
+  border-bottom: none !important;
+  margin: 0 !important;
+}
+
+.content-wrapper .wp-menu-header .nav-link {
+  padding: 8px 16px !important;
+  border-radius: 4px !important;
+  color: #2271b1 !important;
+  border: 1px solid transparent !important;
+  background: transparent !important;
+}
+
+.content-wrapper .wp-menu-header .nav-link:hover {
+  background: #f0f0f1 !important;
+  color: #1d2327 !important;
+}
+
+.content-wrapper .wp-menu-header .nav-link.active {
+  background: #fff !important;
+  color: #1d2327 !important;
+  border: 1px solid #c3c4c7 !important;
+  border-bottom-color: #fff !important;
+}
+
+/* Notice box */
+.content-wrapper .wp-notice {
+  background: #fff !important;
+  border: 1px solid #c3c4c7 !important;
+  border-left: 4px solid #72aee6 !important;
+  padding: 12px 16px !important;
+  margin-bottom: 20px !important;
+  box-shadow: 0 1px 1px rgba(0,0,0,.04) !important;
+}
+
+/* Select menu dropdown */
+.content-wrapper .wp-select-menu {
+  max-width: 300px !important;
+  margin-bottom: 20px !important;
+}
+
+.content-wrapper .wp-select-menu label {
+  display: block !important;
+  margin-bottom: 8px !important;
+  font-weight: 500 !important;
+}
+
+/* Two-column workspace - WordPress layout */
+.content-wrapper .wp-menu-workspace {
+  display: flex !important;
+  gap: 20px !important;
+  margin-top: 20px !important;
+  flex-wrap: wrap !important;
+}
+
+.content-wrapper .wp-menu-left {
+  flex: 0 0 280px !important;
+  min-width: 280px !important;
+}
+
+.content-wrapper .wp-menu-right {
+  flex: 1 !important;
+  min-width: 280px !important;
+}
+
+/* Panel - WordPress meta box style */
+.content-wrapper .wp-panel {
+  background: #fff !important;
+  border: 1px solid #c3c4c7 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 1px 1px rgba(0,0,0,.04) !important;
+  margin-bottom: 20px !important;
+  overflow: hidden !important;
+}
+
+.content-wrapper .wp-panel .card-header.wp-panel-header {
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+.content-wrapper .wp-panel-header {
+  padding: 12px 8px 12px 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  background: #f6f7f7 !important;
+  border-bottom: 1px solid #c3c4c7 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  color: #1d2327 !important;
+  width: 100% !important;
+}
+
+.content-wrapper .wp-panel-header > span:first-child {
+  flex: 0 0 auto !important;
+}
+
+.content-wrapper .wp-panel-header > i.fa-chevron-down,
+.content-wrapper .wp-panel-header > i {
+  flex-shrink: 0 !important;
+  margin-left: auto !important;
+}
+
+.content-wrapper .wp-panel-header:hover {
+  background: #f0f0f1 !important;
+}
+
+.content-wrapper .wp-panel-header[aria-expanded="false"] .fa-chevron-down {
+  transform: rotate(-90deg) !important;
+}
+
+.content-wrapper .wp-panel-body {
+  padding: 12px 16px !important;
+  max-height: 300px !important;
+  overflow-y: auto !important;
+  background: #fff !important;
+}
+
+.content-wrapper .wp-panel-body.collapse:not(.show) {
+  display: none !important;
+}
+
+.content-wrapper .wp-panel-body.collapse.show {
+  display: block !important;
+}
+
+/* Left source panels: do not scroll whole panel body */
+.content-wrapper .wp-menu-left .wp-panel-body {
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* Source tabs (Most Recent | View All) */
+.content-wrapper .wp-source-tabs {
+  display: flex !important;
+  gap: 8px !important;
+  margin-bottom: 12px !important;
+  font-size: 13px !important;
+}
+
+.content-wrapper .wp-source-tabs a {
+  color: #2271b1 !important;
+  text-decoration: none !important;
+  padding: 4px 8px !important;
+}
+
+.content-wrapper .wp-source-tabs a:hover {
+  text-decoration: underline !important;
+  color: #135e96 !important;
+}
+
+/* Source items with checkbox */
+.content-wrapper .wp-source-item {
+  display: flex !important;
+  align-items: center !important;
+  padding: 8px 10px !important;
+  margin-bottom: 4px !important;
+  background: #f6f7f7 !important;
+  border-radius: 4px !important;
+}
+.content-wrapper .wp-source-item lable {
+  font-weight: 400 !important;
+}
+.content-wrapper .wp-source-item:hover {
+  background: #f0f0f1 !important;
+}
+
+.content-wrapper .wp-source-item input[type="checkbox"] {
+  margin-right: 10px !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.content-wrapper .wp-source-item label {
+  margin: 0 !important;
+  flex: 1 !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+}
+
+/* WordPress-like source list: scroll list only, keep actions visible */
+.content-wrapper .wp-source-list {
+  max-height: 260px !important;
+  overflow-y: auto !important;
+  border: 1px solid #dcdcde !important;
+  background: #fff !important;
+  padding: 8px !important;
+}
+
+.content-wrapper .wp-source-actions {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-top: 8px !important;
+  position: sticky !important;
+  bottom: 0 !important;
+  background: #fff !important;
+  border-top: 1px solid #dcdcde !important;
+  padding-top: 8px !important;
+  z-index: 2 !important;
+}
+
+.content-wrapper .wp-source-actions .mt-2 {
+  margin-top: 0 !important;
+}
+
+/* Add to Menu button - WordPress blue */
+.content-wrapper .wp-add-to-menu {
+  margin-top: 0 !important;
+  padding: 8px 16px !important;
+  background: #2271b1 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  font-size: 13px !important;
+}
+
+.content-wrapper .wp-add-to-menu:hover {
+  background: #135e96 !important;
+  color: #fff !important;
+}
+
+.content-wrapper .wp-add-to-menu:disabled {
+  background: #a7aaad !important;
+  cursor: not-allowed !important;
+  color: #fff !important;
+}
+
+/* Select all link */
+.content-wrapper .wp-panel-body .select-all-source {
+  color: #2271b1 !important;
+  text-decoration: none !important;
+  font-size: 13px !important;
+}
+
+.content-wrapper .wp-panel-body .select-all-source:hover {
+  text-decoration: underline !important;
+}
+
+/* Menu structure area */
+.content-wrapper .wp-menu-structure {
+  min-height: 200px !important;
+}
+
+/* Menu item - WordPress style (như ảnh) */
+#menuStructureWrapper .wp-menu-item,
+.content-wrapper .wp-menu-item {
+  margin-bottom: 4px !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  max-width: 482px !important;
+  box-sizing: border-box !important;
+}
+
+.content-wrapper .wp-menu-item.ui-sortable-helper,
+.wp-menu-item.ui-sortable-helper {
+  box-shadow: 0 4px 12px rgba(0,0,0,.15) !important;
+  max-width: 482px !important;
+  box-sizing: border-box !important;
+  opacity: 0.95 !important;
+  z-index: 10050 !important;
+  pointer-events: none !important;
+}
+
+/* Helper kéo - append to body nên cần style độc lập (không trong .content-wrapper) */
+.wp-menu-item.ui-sortable-helper {
+  width: 382px !important;
+  min-width: 382px !important;
+  max-width: 382px !important;
+  box-sizing: border-box !important;
+}
+
+.wp-menu-item.ui-sortable-helper .wp-menu-item-bar {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  padding: 10px 15px !important;
+  background: #f6f7f7 !important;
+  min-height: 20px !important;
+  line-height: 2.30769230 !important;
+  overflow: hidden !important;
+  border: 1px solid #dcdcde !important;
+  box-sizing: border-box !important;
+}
+
+.wp-menu-item.ui-sortable-helper .drag-handle {
+  flex-shrink: 0 !important;
+}
+
+.wp-menu-item.ui-sortable-helper .item-title {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #1d2327 !important;
+}
+
+.wp-menu-item.ui-sortable-helper .item-meta {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-left: auto !important;
+  flex-shrink: 0 !important;
+}
+
+.wp-menu-item.ui-sortable-helper .item-type-badge {
+  font-size: 12px !important;
+  color: #787c82 !important;
+}
+
+.wp-menu-item.ui-sortable-helper .item-toggle {
+  font-size: 12px !important;
+  color: #787c82 !important;
+}
+
+.wp-menu-item.ui-sortable-helper .drag-handle {
+  color: #787c82 !important;
+  margin-right: 10px !important;
+}
+
+/* Placeholder khi kéo (giống WordPress) */
+.wp-menu-item-sort-placeholder {
+  border: 1px dashed #c3c4c7 !important;
+  background: #f6f7f7 !important;
+  min-height: 40px !important;
+  margin-bottom: 4px !important;
+  max-width: 382px !important;
+  box-sizing: border-box !important;
+}
+
+/* Dùng #menuStructureWrapper để đảm bảo style áp dụng sau khi kéo (item có thể nằm trong .wp-menu-item-children) */
+#menuStructureWrapper .wp-menu-item-bar,
+.content-wrapper .wp-menu-item-bar {
+  display: flex !important;
+  align-items: center !important;
+  padding: 10px 15px !important;
+  cursor: pointer !important;
+  background: #f6f7f7 !important;
+  min-height: 20px !important;
+  width: 100% !important;
+  max-width: 382px !important;
+  box-sizing: border-box !important;
+  line-height: 2.30769230 !important;
+  overflow: hidden !important;
+  word-wrap: break-word !important;
+  border: 1px solid #dcdcde !important;
+  position: relative !important;
+}
+
+#menuStructureWrapper .wp-menu-item-bar:hover,
+.content-wrapper .wp-menu-item-bar:hover {
+  background: #f0f0f1 !important;
+}
+
+/* Bulk select - checkbox ẩn mặc định, hiện khi bật Chọn nhiều */
+#menuStructureWrapper .bulk-select-checkbox-wrapper,
+.content-wrapper .bulk-select-checkbox-wrapper {
+  display: none !important;
+  margin-right: 10px !important;
+  flex-shrink: 0 !important;
+}
+
+#menuStructureWrapper.bulk-select-mode .bulk-select-checkbox-wrapper,
+.content-wrapper .bulk-select-mode .bulk-select-checkbox-wrapper {
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.content-wrapper .bulk-select-checkbox-wrapper input {
+  margin: 0 !important;
+  cursor: pointer !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.content-wrapper .bulk-select-toggle {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 6px 12px !important;
+  border: 1px solid #dcdcde !important;
+  border-radius: 4px !important;
+  transition: border-color .2s, background .2s !important;
+}
+
+#menuStructureWrapper.bulk-select-mode .bulk-select-toggle {
+  border-color: #2271b1 !important;
+  background: #f0f6fc !important;
+}
+
+.content-wrapper .bulk-select-summary {
+  padding: 12px !important;
+  background: #f6f7f7 !important;
+  border: 1px solid #dcdcde !important;
+  border-left: 4px solid #d63638 !important;
+  border-radius: 4px !important;
+}
+
+.content-wrapper .bulk-remove-selected-link {
+  color: #d63638 !important;
+  text-decoration: none !important;
+  font-size: 13px !important;
+  border: none !important;
+  background: transparent !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+}
+
+.content-wrapper .bulk-remove-selected-link:hover:not(:disabled) {
+  color: #b32d2e !important;
+  text-decoration: underline !important;
+}
+
+.content-wrapper .bulk-remove-selected-link:disabled {
+  color: #a7aaad !important;
+  opacity: 1 !important;
+  cursor: not-allowed !important;
+  text-decoration: none !important;
+}
+
+.content-wrapper .bulk-select-list-sentence {
+  color: #1d2327 !important;
+  line-height: 1.5 !important;
+}
+
+/* Kéo từ cả thanh (giống WP); cột phải + checkbox là pointer */
+#menuStructureWrapper .wp-menu-item-bar,
+.content-wrapper .wp-menu-item-bar {
+  cursor: move !important;
+}
+
+#menuStructureWrapper .wp-menu-item-bar .item-meta,
+#menuStructureWrapper .wp-menu-item-bar .bulk-select-checkbox-wrapper,
+.content-wrapper .wp-menu-item-bar .item-meta,
+.content-wrapper .wp-menu-item-bar .bulk-select-checkbox-wrapper {
+  cursor: pointer !important;
+}
+
+#menuStructureWrapper .wp-menu-item-bar .drag-handle,
+.content-wrapper .wp-menu-item-bar .drag-handle {
+  cursor: inherit !important;
+  color: #787c82 !important;
+  margin-right: 10px !important;
+  font-size: 12px !important;
+}
+
+#menuStructureWrapper .wp-menu-item-bar .item-icon,
+.content-wrapper .wp-menu-item-bar .item-icon {
+  margin-right: 8px !important;
+  flex-shrink: 0 !important;
+  font-size: 18px !important;
+}
+
+/* Icon picker trong settings panel */
+.wp-menu-item-settings .field-icon label {
+  display: block !important;
+  margin-bottom: 6px !important;
+  font-weight: 500 !important;
+}
+
+.wp-icon-quick-pick {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+}
+
+.wp-icon-btn {
+  width: 36px !important;
+  height: 36px !important;
+  padding: 0 !important;
+  border: 1px solid #dcdcde !important;
+  border-radius: 4px !important;
+  background: #fff !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: background .2s, border-color .2s !important;
+}
+
+.wp-icon-btn:hover {
+  background: #f0f0f1 !important;
+  border-color: #2271b1 !important;
+  color: #2271b1 !important;
+}
+
+.wp-icon-btn .material-symbols-outlined {
+  font-size: 20px !important;
+}
+
+.item-icon-preview {
+  flex-shrink: 0 !important;
+}
+
+#menuStructureWrapper .wp-menu-item-bar .item-title,
+.content-wrapper .wp-menu-item-bar .item-title {
+  flex: 1 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #1d2327 !important;
+  min-width: 0 !important;
+}
+
+#menuStructureWrapper .wp-menu-item-bar .item-meta,
+.content-wrapper .wp-menu-item-bar .item-meta {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-left: auto !important;
+  flex-shrink: 0 !important;
+}
+
+#menuStructureWrapper .wp-menu-item-bar .item-type-badge,
+.content-wrapper .wp-menu-item-bar .item-type-badge {
+  font-size: 12px !important;
+  color: #787c82 !important;
+  font-weight: 400 !important;
+}
+
+#menuStructureWrapper .wp-menu-item-bar .item-toggle,
+.content-wrapper .wp-menu-item-bar .item-toggle {
+  font-size: 12px !important;
+  color: #787c82 !important;
+  transition: transform .2s !important;
+}
+
+/* Menu item settings - expandable panel */
+#menuStructureWrapper .wp-menu-item-settings,
+.content-wrapper .wp-menu-item-settings {
+  display: none !important;
+  border-top: 1px solid #c3c4c7 !important;
+  background: #f6f7f7 !important;
+  max-width: 482px !important;
+  box-sizing: border-box !important;
+}
+
+.content-wrapper .wp-menu-item-settings.show,
+#menuStructureWrapper .wp-menu-item-settings.show {
+  display: block !important;
+  max-width: 482px !important;
+}
+
+#menuStructureWrapper .wp-menu-item-settings-inner,
+.content-wrapper .wp-menu-item-settings-inner {
+  padding: 16px 20px !important;
+  max-width: 482px !important;
+  box-sizing: border-box !important;
+}
+
+.content-wrapper .wp-menu-item-settings .field-nav-label,
+.content-wrapper .wp-menu-item-settings .field-url,
+.content-wrapper .wp-menu-item-settings .field-icon,
+.content-wrapper .wp-menu-item-settings .field-link-rel {
+  margin-bottom: 12px !important;
+}
+
+.content-wrapper .wp-menu-item-settings .menu-settings-row {
+  display: grid !important;
+  grid-template-columns: 120px minmax(0, 1fr) !important;
+  align-items: start !important;
+  column-gap: 12px !important;
+}
+
+.content-wrapper .wp-menu-item-settings .menu-settings-row-label,
+.content-wrapper .wp-menu-item-settings .field-url label {
+  display: block !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 36px !important;
+  margin: 0 !important;
+}
+
+.content-wrapper .wp-menu-item-settings .menu-settings-row-control {
+  min-width: 0 !important;
+}
+
+.content-wrapper .wp-menu-item-settings .menu-settings-row-control .form-control {
+  width: 100% !important;
+}
+
+.content-wrapper .wp-menu-item-settings .menu-settings-row-control--with-preview {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.content-wrapper .wp-menu-item-settings .menu-settings-row-control--with-preview .nav-icon-select {
+  flex: 1 1 auto !important;
+}
+
+.content-wrapper .wp-menu-item-settings .menu-settings-row-control small {
+  line-height: 1.4 !important;
+}
+
+.content-wrapper .wp-menu-item-settings .field-link-rel .menu-settings-row-label,
+.content-wrapper .wp-menu-item-settings .field-link-rel .menu-settings-row-control {
+  padding-top: 2px !important;
+}
+
+.content-wrapper .wp-menu-item-settings .field-original {
+  margin-bottom: 12px !important;
+  font-size: 12px !important;
+  color: #787c82 !important;
+}
+
+.content-wrapper .wp-menu-item-settings .original-link {
+  color: #2271b1 !important;
+}
+
+.content-wrapper .wp-menu-item-settings .item-actions-links {
+  margin-bottom: 0 !important;
+  font-size: 13px !important;
+}
+
+.content-wrapper .wp-menu-item-settings .item-actions-links .separator {
+  margin: 0 8px !important;
+  color: #c3c4c7 !important;
+}
+
+.content-wrapper .wp-menu-item-children {
+  margin-left: 28px !important;
+  margin-top: 0 !important;
+  padding: 6px 0 !important;
+  /* border-left: 1px solid #e0e0e0 !important; */
+  padding-left: 12px !important;
+  min-height: 8px !important;
+}
+
+.content-wrapper .wp-menu-item-children--empty {
+  min-height: 12px !important;
+}
+
+/* Menu structure right panel body - no max-height when editing */
+.content-wrapper .wp-menu-right .card-body.wp-panel-body {
+  max-height: none !important;
+}
+
+/* Save / Delete menu buttons */
+.content-wrapper .wp-save-menu-btn {
+  padding: 10px 20px !important;
+  background: #2271b1 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+}
+
+.content-wrapper .wp-save-menu-btn:hover {
+  background: #135e96 !important;
+  color: #fff !important;
+}
+
+.content-wrapper .wp-delete-menu-link {
+  font-size: 14px !important;
+}
+
+.content-wrapper .wp-delete-menu-link:hover {
+  text-decoration: underline !important;
+}
+
+/* Empty state message */
+.content-wrapper .wp-empty-msg {
+  padding: 32px 24px !important;
+  text-align: center !important;
+  color: #787c82 !important;
+  font-size: 14px !important;
+  background: #f6f7f7 !important;
+  border: 1px dashed #c3c4c7 !important;
+  border-radius: 4px !important;
+}
+
+/* Create menu form */
+.content-wrapper .wp-menu-name-row {
+  margin-bottom: 20px !important;
+}
+
+.content-wrapper .wp-menu-name-row label {
+  display: block !important;
+  margin-bottom: 6px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+.content-wrapper .wp-create-menu-btn {
+  padding: 10px 20px !important;
+  background: #2271b1 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+}
+
+.content-wrapper .wp-create-menu-btn:hover {
+  background: #135e96 !important;
+  color: #fff !important;
+}
+
+/* Settings section */
+.content-wrapper .wp-settings-section {
+  margin-top: 20px !important;
+  padding-top: 20px !important;
+  border-top: 1px solid #c3c4c7 !important;
+}
+
+.content-wrapper .wp-settings-section h4 {
+  font-size: 14px !important;
+  margin-bottom: 12px !important;
+  font-weight: 600 !important;
+}
+
+/* Custom link form (WordPress-like) */
+.content-wrapper .wp-custom-link-form {
+  margin-top: 10px !important;
+}
+
+.content-wrapper .wp-custom-link-form .description {
+  margin: 0 0 12px !important;
+}
+
+.content-wrapper .wp-custom-link-form .description label {
+  display: block !important;
+  font-size: 13px !important;
+  color: #50575e !important;
+  margin-bottom: 6px !important;
+  font-weight: 500 !important;
+}
+
+.content-wrapper .wp-custom-link-form input.form-control {
+  width: 100% !important;
+}
+
+.content-wrapper .wp-custom-link-actions {
+  display: flex !important;
+  justify-content: flex-end !important;
+  margin-top: 4px !important;
+}
+
+/* Content area background for menu page - WordPress light gray */
+.content-wrapper .content.wp-menu-page {
+  background: #f0f0f1 !important;
+}
+
+.content-wrapper .content.wp-menu-page .container-fluid {
+  background: transparent !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-wrapper .wp-menu-workspace {
+    flex-direction: column !important;
+  }
+  .content-wrapper .wp-menu-left {
+    flex: 1 1 100% !important;
+    min-width: 100% !important;
+  }
+  .content-wrapper .wp-menu-right {
+    min-width: 100% !important;
+  }
+}
