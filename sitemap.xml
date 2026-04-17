@@ -11,4 +11,10 @@
             <sitemap>
             <loc>https://unblockedgames76cloud.netlify.app/sitemap-posts-2.xml</loc>
         </sitemap>
+            <sitemap>
+            <loc>https://unblockedgames76cloud.netlify.app/sitemap-posts-3.xml</loc>
+        </sitemap>
+            <sitemap>
+            <loc>https://unblockedgames76cloud.netlify.app/sitemap-developers-1.xml</loc>
+        </sitemap>
     </sitemapindex>
